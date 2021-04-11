@@ -1,0 +1,27 @@
+//antialiased,subpixel-antialiased,none
+$font-smoothing: antialiased;
+
+//auto,optimizeSpeed,optimizeLegibility,geometricPrecision
+$text-rendering: auto;
+
+$base-font-family: 'Montserrat', sans-serif;
+$base-font-size: 18px;
+$base-font-color: #fff;
+$base-background-color: #101010;
+
+$site-size: 1460px + 60;
+
+// colors
+$color-primary: #F6CE41; // yellow
+
+// easing / animation
+$duration: .2s;
+$easing: ease-in-out;
+$delay: .35s;
+
+//breakpoints
+$breakpoint-mobile: 767px;
+
+//path
+$path-assets: "/vom-lp/public";
+$path-image: "#{$path-assets}/images";

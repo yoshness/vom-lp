@@ -1,0 +1,29 @@
+@import './setting.scss';
+
+body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: $font-smoothing;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: $font-smoothing;
+  text-rendering: $text-rendering;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  color: $base-font-color;
+  background: $base-background-color;
+
+  @media screen and (min-width: 768px) {
+    min-width: $site-size;
+  }
+}
+
+html, body {
+  // STATE WHEN MENU IS OPEN
+  &.is-locked {
+    overflow: hidden;
+  }
+}
+
+* {
+  outline: none;
+}
