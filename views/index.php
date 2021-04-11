@@ -12,7 +12,7 @@
 		</div>
 	</div>
 	<section class="l-index__intro">
-		<div class="l-container u-flex u-flex--center info-block">
+		<div class="l-container u-flex u-flex--center info-block js-scroll-activate">
 			<div class="info-block__left">
 				<h2>VOMって<br>どんなサービス？</h2>
 				<p>
@@ -24,13 +24,13 @@
 				</p>
 			</div>
 			<div class="info-block__right">
-				<img src="<?php echo $domainPath; ?>public/images/index/intro-1.png">
-				<img src="<?php echo $domainPath; ?>public/images/index/intro-2.png">
+				<img src="<?php echo $domainPath; ?>public/images/index/intro-1.png" class="rellax" data-rellax-speed="1">
+				<img src="<?php echo $domainPath; ?>public/images/index/intro-2.png" class="rellax" data-rellax-speed="3">
 			</div>
 		</div>
 	</section>
 	<section class="l-index__function">
-		<div class="l-container u-flex">
+		<div class="l-container u-flex js-scroll-activate">
 			<h2 class="section-title">VOMは何ができるの？</h2>
 			<ul class="u-flex u-flex--center">
 				<li class="description-block">
@@ -52,7 +52,7 @@
 		</div>
 	</section>
 	<section class="l-index__use">
-		<div class="l-container u-flex u-flex--center info-block info-block--reverse">
+		<div class="l-container u-flex u-flex--center info-block info-block--reverse  js-scroll-activate">
 			<div class="info-block__left">
 				<h2>利用シーン</h2>
 				<p> 
@@ -60,19 +60,21 @@
 				</p>
 			</div>
 			<div class="info-block__right">
-				<img src="<?php echo $domainPath; ?>public/images/index/use-1.png">
-				<img src="<?php echo $domainPath; ?>public/images/index/use-2.png">
-				<img src="<?php echo $domainPath; ?>public/images/index/use-3.png">
+				<img src="<?php echo $domainPath; ?>public/images/index/use-1.png" class="rellax" data-rellax-speed="1">
+				<img src="<?php echo $domainPath; ?>public/images/index/use-2.png" class="rellax" data-rellax-speed="3">
+				<img src="<?php echo $domainPath; ?>public/images/index/use-3.png" class="rellax" data-rellax-speed="2">
 			</div>
 		</div>
 	</section> 
-	<section class="l-index__notice u-flex u-flex--center u-bg-fill" style="background-image: url(<?php echo $domainPath; ?>public/images/index/notice-1.jpg);">
-		<h2>超有名タレント、著名人続々登録！</h2>
-		<p>事前登録1,000人突破</p>
-		<a href="#" class="u-flex u-flex--center">事前登録する</a>
+	<section class="l-index__notice u-bg-fill" style="background-image: url(<?php echo $domainPath; ?>public/images/index/notice-1.jpg);">
+		<div class="u-flex u-flex--center js-scroll-activate">
+			<h2>超有名タレント、著名人続々登録！</h2>
+			<p>事前登録1,000人突破</p>
+			<a href="#" class="u-flex u-flex--center">事前登録する</a>
+		</div>
 	</section>
 	<section class="l-index__overseas">
-		<div class="l-container u-flex u-flex--center info-block">
+		<div class="l-container u-flex u-flex--center info-block js-scroll-activate">
 			<div class="info-block__left">
 				<h2>海外で急成長中</h2>
 				<i></i>
@@ -84,13 +86,13 @@
 				</p>
 			</div>
 			<div class="info-block__right">
-				<img src="<?php echo $domainPath; ?>public/images/index/overseas-1.png">
-				<img src="<?php echo $domainPath; ?>public/images/index/overseas-2.png">
+				<img src="<?php echo $domainPath; ?>public/images/index/overseas-1.png" class="rellax" data-rellax-speed="1">
+				<img src="<?php echo $domainPath; ?>public/images/index/overseas-2.png" class="rellax" data-rellax-speed="3">
 			</div>
 		</div>
 	</section>
 	<section class="l-index__monetize">
-		<div class="l-container u-flex u-flex--center info-block info-block--reverse">
+		<div class="l-container u-flex u-flex--center info-block info-block--reverse js-scroll-activate">
 			<div class="info-block__left">
 				<h2>可処分時間を収益化</h2>
 				<p> 
@@ -101,8 +103,8 @@
 				</p>
 			</div>
 			<div class="info-block__right">
-				<img src="<?php echo $domainPath; ?>public/images/index/monetize-1.png">
-				<img src="<?php echo $domainPath; ?>public/images/index/monetize-2.png">
+				<img src="<?php echo $domainPath; ?>public/images/index/monetize-1.png" class="rellax" data-rellax-speed="3">
+				<img src="<?php echo $domainPath; ?>public/images/index/monetize-2.png" class="rellax" data-rellax-speed="-2">
 				<p class="l-index__monetize-note">※上記は参考例になります。リクエストが多く、対応する回数が増えるほど、収益が高まります。<br>※ユーザーは費用を支払い、動画受け渡し後に依頼額の70%が撮影者の収益となり、<br>30%がプラットフォーム上の手数料になります。</p>
 			</div>
 		</div>

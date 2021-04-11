@@ -14,6 +14,8 @@
     "laravel-mix": "0.*"
   },
   "dependencies": {
-    "browser-sync": "^2.26.7"
+    "animejs": "^3.2.1",
+    "browser-sync": "^2.26.7",
+    "rellax": "^1.12.1"
   }
 }

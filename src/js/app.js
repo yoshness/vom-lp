@@ -2,4 +2,8 @@ import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 
-console.log('Hello World!');
+import scrollActivate from './modules/scroll-activate';
+import initParallax from './modules/init-parallax';
+
+scrollActivate();
+initParallax();
