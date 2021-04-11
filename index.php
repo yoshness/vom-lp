@@ -1,6 +1,7 @@
 <?php 
 	include 'partials/header.php';
 
+	$domainPath = '/vom-lp/';
 	$request = $_SERVER['REQUEST_URI'];
 	switch ($request) {
 	    case '/vom-lp/':

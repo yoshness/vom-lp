@@ -1,0 +1,174 @@
+.l-index__intro {
+  .info-block__right {
+    img {
+      &:first-of-type {
+        width: 553px;
+        height: 356px;
+        z-index: 1;
+        top: 300px;
+      }
+      &:last-of-type {
+        width: 275px;
+        height: 570px;
+        top: -120px;
+        left: 20vw;
+      }
+    }
+  }
+}
+
+.l-index__function {
+  padding-top: 120px;
+  text-align: center;
+
+  ul {
+    margin-top: 130px;
+    li {
+      width: 31.5%;
+
+      &:first-child {
+        transform: translateY(50px);
+      }
+      &:last-child {
+        transform: translateY(-50px);
+      }
+    }
+  }
+}
+
+.l-index__use {
+  padding: 350px 0 320px;
+
+  .info-block__right {
+    img {
+      &:first-of-type {
+        width: 289px;
+        height: 247px;
+        top: -120px;
+        left: 220px;
+      }
+      &:nth-of-type(2) {
+        width: 262px;
+        height: 224px;
+        top: 120px;
+        left: -240px;
+      }
+      &:last-of-type {
+        width: 264px;
+        height: 225px;
+        top: 100px;
+        left: 270px;
+      }
+    }
+  }
+}
+
+.l-index__notice {
+  justify-content: center;
+  padding: 105px 0;
+  text-align: center;
+
+  h2 {
+    width: 100%;
+    margin-bottom: 70px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  p {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: bold;
+    color: $color-secondary;
+
+    &:before,
+    &:after {
+      display: block;
+      width: 59px;
+      height: 66px;
+      position: absolute;
+      top: -30px;
+      content: '';
+      background-image: url('./images/decor-two-lines.svg');
+      background-size: cover;
+    }
+    &:before {
+      left: 38%;
+    }
+    &:after {
+      left: 59%;
+      transform: scaleX(-1);
+    }
+  }
+  a {
+    justify-content: center;
+    width: 534px;
+    padding: 40px 0;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    background-color: $color-secondary;
+  }
+}
+
+.l-index__overseas {
+  padding: 180px 0 0;
+
+  .info-block__left {
+    i {
+      display: inline-block;
+      width: 62px;
+      height: 69px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $color-primary;
+      transform: translateX(-11vw);
+
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-image: url('./images/confetti.svg');
+    }
+  }
+
+  .info-block__right {
+    img {
+      &:first-of-type {
+        width: 361px;
+        height: 282px;
+        top: 0;
+      }
+      &:last-of-type {
+        width: 663px;
+        height: 440px;
+        top: 60px;
+      }
+    }
+  }
+}
+
+.l-index__monetize {
+  .info-block__right {
+    img {
+      &:first-of-type {
+        width: 275px;
+        height: 570px;
+        top: 100px;
+        left: 220px;
+      }
+      &:last-of-type {
+        width: 800px;
+        top: -350px;
+      }
+    }
+  }
+}
+
+.l-index__monetize-note {
+  position: absolute;
+  bottom: 280px;
+  font-size: 12px;
+}

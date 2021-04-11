@@ -1,0 +1,38 @@
+.info-block {
+  &.info-block--reverse {
+    .info-block__left {
+      padding-right: 0;
+      padding-left: 120px;
+
+      order: 2;
+    }
+    .info-block__right {
+      order: 1;
+    }
+  }
+}
+
+.info-block__left {
+  width: 57%;
+  position: relative;
+  padding-right: 120px;
+
+  h2 {
+    margin-bottom: 90px;
+    font-size: 70px;
+    font-weight: bold;
+  }
+
+  p {
+    line-height: 2.8;
+  }
+}
+
+.info-block__right {
+  width: 43%;
+  position: relative;
+
+  img {
+    position: relative;
+  }
+}
