@@ -26,6 +26,18 @@
   p {
     line-height: 2.8;
   }
+
+  a {
+    display: inline-block;
+    width: 260px;
+    margin-top: 50px;
+    padding: 25px 0;
+    font-size: 14px;
+    text-align: center;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: 50px;
+  }
 }
 
 .info-block__right {

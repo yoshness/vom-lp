@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="./public/style.css">
 
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 		<link rel="shortcut icon" type="image/png" href="./public/images/favicon.png"/>
 

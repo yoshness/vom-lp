@@ -61,8 +61,8 @@
 			</div>
 			<div class="info-block__right">
 				<img src="<?php echo $domainPath; ?>public/images/index/use-1.png" class="rellax" data-rellax-speed="1">
-				<img src="<?php echo $domainPath; ?>public/images/index/use-2.png" class="rellax" data-rellax-speed="3">
-				<img src="<?php echo $domainPath; ?>public/images/index/use-3.png" class="rellax" data-rellax-speed="2">
+				<img src="<?php echo $domainPath; ?>public/images/index/use-2.png" class="rellax" data-rellax-speed="2">
+				<img src="<?php echo $domainPath; ?>public/images/index/use-3.png" class="rellax" data-rellax-speed="3">
 			</div>
 		</div>
 	</section> 
@@ -103,10 +103,90 @@
 				</p>
 			</div>
 			<div class="info-block__right">
-				<img src="<?php echo $domainPath; ?>public/images/index/monetize-1.png" class="rellax" data-rellax-speed="3">
-				<img src="<?php echo $domainPath; ?>public/images/index/monetize-2.png" class="rellax" data-rellax-speed="-2">
+				<img src="<?php echo $domainPath; ?>public/images/index/monetize-1.png" class="rellax" data-rellax-speed="2">
+				<img src="<?php echo $domainPath; ?>public/images/index/monetize-2.png">
 				<p class="l-index__monetize-note">※上記は参考例になります。リクエストが多く、対応する回数が増えるほど、収益が高まります。<br>※ユーザーは費用を支払い、動画受け渡し後に依頼額の70%が撮影者の収益となり、<br>30%がプラットフォーム上の手数料になります。</p>
 			</div>
 		</div>
 	</section> 
+	<section class="l-index__faq">
+		<div class="l-container js-scroll-activate">
+			<h2 class="section-title">よくある質問</h2>
+			<ul>
+				<li>
+					<div class="faq-block js-toggle-slide is-active">
+						<label for="">Q1</label>
+						<h3 class="faq-block__title">そこまでフォロワーいないですが、登録しても大丈夫ですか？</h3>
+						<p class="faq-block__description js-toggle-target">事前登録申請はどなたでも可能です。サービスリリース時点でVOM独自審査基準により利用が制限される場合もありますが、私たちが大切にしているのは皆様のファンの方々を元気にする”場”を提供することです。<br>フォロワーが数千、数万、多い、少ない関係なく、ファンはあなたからのメッセージを待っています。共に日本を元気にしましょう。</p>
+					</div>
+				</li>
+				<li>
+					<div class="faq-block js-toggle-slide">
+						<label for="">Q2</label>
+						<h3 class="faq-block__title">費用はどのように決めますか？</h3>
+						<p class="faq-block__description js-toggle-target">事前登録申請はどなたでも可能です。サービスリリース時点でVOM独自審査基準により利用が制限される場合もありますが、私たちが大切にしているのは皆様のファンの方々を元気にする”場”を提供することです。<br>フォロワーが数千、数万、多い、少ない関係なく、ファンはあなたからのメッセージを待っています。共に日本を元気にしましょう。</p>
+					</div>
+				</li>
+				<li>
+					<div class="faq-block js-toggle-slide">
+						<label for="">Q3</label>
+						<h3 class="faq-block__title">事務所に所属していますが、登録して問題ないでしょうか？</h3>
+						<p class="faq-block__description js-toggle-target">事前登録申請はどなたでも可能です。サービスリリース時点でVOM独自審査基準により利用が制限される場合もありますが、私たちが大切にしているのは皆様のファンの方々を元気にする”場”を提供することです。<br>フォロワーが数千、数万、多い、少ない関係なく、ファンはあなたからのメッセージを待っています。共に日本を元気にしましょう。</p>
+					</div>
+				</li>
+				<li>
+					<div class="faq-block js-toggle-slide">
+						<label for="">Q4</label>
+						<h3 class="faq-block__title">売上はいつ振り込まれますか？</h3>
+						<p class="faq-block__description js-toggle-target">事前登録申請はどなたでも可能です。サービスリリース時点でVOM独自審査基準により利用が制限される場合もありますが、私たちが大切にしているのは皆様のファンの方々を元気にする”場”を提供することです。<br>フォロワーが数千、数万、多い、少ない関係なく、ファンはあなたからのメッセージを待っています。共に日本を元気にしましょう。</p>
+					</div>
+				</li>
+				<li>
+					<div class="faq-block js-toggle-slide">
+						<label for="">Q5</label>
+						<h3 class="faq-block__title">利用の流れを教えてください。</h3>
+						<p class="faq-block__description js-toggle-target">事前登録申請はどなたでも可能です。サービスリリース時点でVOM独自審査基準により利用が制限される場合もありますが、私たちが大切にしているのは皆様のファンの方々を元気にする”場”を提供することです。<br>フォロワーが数千、数万、多い、少ない関係なく、ファンはあなたからのメッセージを待っています。共に日本を元気にしましょう。</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="l-index__notice u-bg-fill" style="background-image: url(<?php echo $domainPath; ?>public/images/index/notice-2.png); margin-bottom: 150px;">
+		<div class="u-flex u-flex--center js-scroll-activate">
+			<h2>超有名タレント、著名人続々登録！</h2>
+			<p>事前登録1,000人突破</p>
+			<a href="#" class="u-flex u-flex--center">事前登録する</a>
+		</div>
+	</section>
+	<section class="l-index__target">
+		<div class="l-container u-flex u-flex--center info-block js-scroll-activate">
+			<div class="info-block__left">
+				<h2>事務所所属の皆様へ</h2>
+				<p> 
+					所属されている場合でも、事前登録自体は問題ございません。（仮登録のため）<br>
+					また実際に本サービスを用いて収益化をする場合は、事務所様との業務提携（協力）<br>
+					する体制なども整っておりますため、一度マネージャー様や上層部の方に以下リンク資料を共有の上、ご紹介いただけると幸いです。<br>
+					（実際に本サービスを著名人の方が知り、事務所につないでいただき、既に弊社とプロダクション様の業務提携も実施・増加しております）
+				</p>
+				<a href="#">サービス概要資料について</a>
+			</div>
+			<div class="info-block__right">
+				<img src="<?php echo $domainPath; ?>public/images/index/target-1.png"  class="rellax" data-rellax-speed="1">
+				<img src="<?php echo $domainPath; ?>public/images/index/target-2.png"  class="rellax" data-rellax-speed="2">
+			</div>
+		</div>
+	</section>
+	<section class="l-index__message">
+		<div class="l-container js-scroll-activate">
+			<h3>サービスにかける想い</h3>
+			<h2 class="section-title">日本中を本気で元気に<br>そして勇気を感動を。</h2>
+			<p>私には父との記憶がほとんどありません。父が仕事人間で家にいませんでした。<br>父は私が17歳の頃にガンで亡くなりました。父の葬式には5階建てのビルが全フロア埋まるほどの参列者がいました。<br>父は何をしている人なのか。私はその時初めて「時価総額1兆円を超える会社の北海道支社長」という<br>想像をはるかに超える偉大さを知りました。父から教わることはないと思いましたが、父の葬儀は、父の集大成であり<br>父が世の中に与え続けた、貢献し続けた結果なんだ、と強く実感しました。父は死をもって背中で教えてくれました。<br>現在、日本そして、世界はコロナ禍によって活力を失い、元気を失っています。<br>今こそエンタメの本質が問われています。日本を元気にするには、ファン一人一人を元気にする他ありません。<br>このサービスを通して、著名人からファン一人一人にメッセージを送ることが、日本を元気にすると確信しています。<br>どうか、事務所の皆様、ファンが付いている著名人の皆様、お力をお貸しください。</p>
+		</div>
+		<img src="<?php echo $domainPath; ?>public/images/index/message-flag.png"  class="rellax" data-rellax-speed="2">
+	</section>
+	<section class="l-index__register">
+		<div class="l-container">
+			<h2 class="section-title">事前登録フォーム</h2>
+		</div>
+	</section>
 </main>

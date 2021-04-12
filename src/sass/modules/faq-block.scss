@@ -1,0 +1,74 @@
+.faq-block {
+  margin-bottom: 10px;
+  padding: 50px 130px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: left;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #191919;
+
+  label {
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: -60px;
+  }
+
+  &.is-active {
+    color: $color-primary;
+    .faq-block__title {
+      &:before {
+        border-color: $color-primary;
+      }
+      &:after {
+        top: 7px;
+        right: -52px;
+        border-top-color: $color-primary;
+        border-right-color: $color-primary;
+        transform: rotate(135deg);
+      }
+    }
+    .faq-block__description {
+      display: block;
+    }
+  }
+}
+
+.faq-block__title {
+  display: inline-block;
+  width: 99%;
+  position: relative;
+  font-weight: 500;
+
+  &:before {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: -60px;
+    content: '';
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all $duration $easing;
+  }
+  &:after {
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 8px;
+    right: -51px;
+    content: '';
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transition: all $duration $easing;
+    transform: rotate(45deg);
+  }
+}
+
+.faq-block__description {
+  display: none;
+  margin-top: 50px;
+  font-weight: 600;
+}
