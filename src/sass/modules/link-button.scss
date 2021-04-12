@@ -1,0 +1,25 @@
+.link-button {
+  display: inline-block;
+  width: 260px;
+  margin-top: 50px;
+  padding: 25px 0;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  color: $color-primary;
+  border: 1px solid $color-primary;
+  background-image: linear-gradient(to left, transparent, transparent 50%, $color-primary 50%, $color-primary);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: background-position $duration $easing, color $duration $easing;
+
+  &:hover {
+    color: #101010;
+    background-position: 0 0;
+    background-size: 210% 100%;
+  }
+
+  &.link-button--rounded {
+    border-radius: 50px;
+  }
+}

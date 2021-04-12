@@ -1,0 +1,83 @@
+.contact-form {
+  width: 1000px;
+  margin: 0 auto;
+
+  input[type='submit'] {
+    font-weight: bold;
+  }
+}
+.contact-form__row {
+  margin-bottom: 60px;
+  text-align: left;
+
+  label {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  input {
+    &[type='text'],
+    &[type='email'] {
+      width: 100%;
+      padding: 28px 35px;
+      border-radius: 10px;
+      background-color: #191919;
+    }
+  }
+  textarea {
+    width: 100%;
+    padding: 28px 35px;
+    resize: none;
+    border-radius: 10px;
+    background-color: #191919;
+  }
+}
+.contact-form__row--required {
+  label {
+    &:after {
+      display: inline-block;
+      width: 70px;
+      height: 26px;
+      margin-left: 30px;
+      font-size: 14px;
+      line-height: 2;
+      content: '必須';
+      text-align: center;
+      color: #2e2e2e;
+      background-color: $color-primary;
+    }
+  }
+}
+.contact-form__checkboxes {
+  label {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+.contact-form__terms {
+  margin-bottom: 45px;
+  font-size: 16px;
+  font-weight: 500;
+
+  p {
+    margin-bottom: 20px;
+    line-height: 2;
+  }
+  label {
+    &:after {
+      top: -1px !important;
+    }
+  }
+}
+.contact-form__notice {
+  margin-top: 80px;
+  font-size: 14px;
+  line-height: 2.3;
+  color: #727070;
+
+  a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+}

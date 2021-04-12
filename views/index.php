@@ -16,7 +16,7 @@
 			<div class="info-block__left">
 				<h2>VOMって<br>どんなサービス？</h2>
 				<p>
-					VOMは、ファンと著名人による日本最大級の動画メッセージプラットフォームです。
+					VOMは、<em>ファンと著名人による日本最大級の動画メッセージプラットフォームです。</em>
 					ユーザーは目的に応じて好きな著名人に動画メッセージリクエストの送信が可能、
 					著名人は複数のリクエストからプレゼントしたいテーマを自ら選定し、自撮り動画を作成。
 					作成された世界にひとつだけの動画はユーザーに送られ、感動体験と勇気を与えます。
@@ -56,7 +56,7 @@
 			<div class="info-block__left">
 				<h2>利用シーン</h2>
 				<p> 
-					ユーザーの希望は様々です。「子供が小学校に入学したのでお祝いメッセージを欲しい」「息子が勉強しないので、叱って欲しい」「友達の結婚式でサプライズプレゼントしたい」「彼氏に振られたので慰めて欲しい」「闘病中の母に応援コメントをもらいたい」など、皆さんが思っている以上にファンは多くの不安、痛みを抱えています。<br>ファンは、ずっとあなたのメッセージを待っています。
+					ユーザーの希望は様々です。「子供が小学校に入学したのでお祝いメッセージを欲しい」「息子が勉強しないので、叱って欲しい」「友達の結婚式でサプライズプレゼントしたい」「彼氏に振られたので慰めて欲しい」「闘病中の母に応援コメントをもらいたい」など、皆さんが思っている以上にファンは多くの不安、痛みを抱えています。<br><em>ファンは、ずっとあなたのメッセージを待っています。</em>
 				</p>
 			</div>
 			<div class="info-block__right">
@@ -81,7 +81,7 @@
 				<p>
 					エンターテイメントの聖地、アメリカでは巣篭もり需要に合わせて<br>
 					メイウェザー、マイク・タイソンなど超大物からハリウッド俳優、政治家<br>
-					モデル、タレント、コメディアンなど15,000人以上が登録し、ユーザーの求める声に<br>
+					モデル、タレント、コメディアンなど15,000人<em>以上が登録し、ユーザーの</em>求める声に<br>
 					応える新たなファンビジネスが構築されています。
 				</p>
 			</div>
@@ -98,7 +98,7 @@
 				<p> 
 					VOMは、自分自身にファンが付いている方であれば、全ての人が利用可能。<br>
 					ファンにとって、あなたは元気の源、生きる糧となっていることも少なくありません。<br>
-					アメリカではミドルレイヤーの方が同様のサービスを利用し、月700万の収益を手に入れています。求める人も、撮影する側も幸せになる。<br>
+					アメリカではミドルレイヤーの方が同様のサービスを利用し、月700万の収<em>益を手に入れてい</em>ます。求める人も、撮影する側も幸せになる。<br>
 					場所や時間に囚われず、ありのままのファンサービス、これこそがVOMの魅力です。
 				</p>
 			</div>
@@ -163,12 +163,12 @@
 			<div class="info-block__left">
 				<h2>事務所所属の皆様へ</h2>
 				<p> 
-					所属されている場合でも、事前登録自体は問題ございません。（仮登録のため）<br>
+					所属されている場合でも、事前<em>登録自体は問題ございません。（仮登録のため）</em><br>
 					また実際に本サービスを用いて収益化をする場合は、事務所様との業務提携（協力）<br>
 					する体制なども整っておりますため、一度マネージャー様や上層部の方に以下リンク資料を共有の上、ご紹介いただけると幸いです。<br>
 					（実際に本サービスを著名人の方が知り、事務所につないでいただき、既に弊社とプロダクション様の業務提携も実施・増加しております）
 				</p>
-				<a href="#">サービス概要資料について</a>
+				<a href="#" class="link-button link-button--rounded">サービス概要資料について</a>
 			</div>
 			<div class="info-block__right">
 				<img src="<?php echo $domainPath; ?>public/images/index/target-1.png"  class="rellax" data-rellax-speed="1">
@@ -185,8 +185,66 @@
 		<img src="<?php echo $domainPath; ?>public/images/index/message-flag.png"  class="rellax" data-rellax-speed="2">
 	</section>
 	<section class="l-index__register">
-		<div class="l-container">
+		<div class="l-container js-scroll-activate">
 			<h2 class="section-title">事前登録フォーム</h2>
+			<form action="#" method="POST" class="contact-form">
+				<div class="contact-form__row contact-form__row--required">
+					<label for="">活動名、芸名</label>
+					<input type="text" placeholder="例）タケル  ジョンソン">
+				</div>
+				<div class="contact-form__row contact-form__row--required">
+					<label for="">メールアドレス</label>
+					<input type="email" placeholder="例）vom@gamil.com">
+				</div>
+				<div class="contact-form__row contact-form__row--required">
+					<label for="">メールアドレス（再確認用）</label>
+					<input type="email" placeholder="例）vom@gamil.com">
+				</div>
+				<div class="contact-form__row contact-form__row--required">
+					<label for="">カテゴリ（複数選択可）</label>
+					<div class="contact-form__checkboxes custom-checkboxes">
+						<input id="category_1" name="category" value="女優" type="checkbox"><label for="category_1">女優</label>
+						<input id="category_2" name="category" value="俳優" type="checkbox"><label for="category_2">俳優</label>
+						<input id="category_3" name="category" value="芸人" type="checkbox"><label for="category_3">俳優</label>
+					</div>
+					<input type="text" placeholder="例）その他の場合は、ご記入ください。">
+				</div>
+				<div class="contact-form__row">
+					<label for="">SNS情報（最低1つご記入ください）</label>
+					<div class="contact-form__sns custom-checkboxes u-flex u-flex--center">
+						<input id="sns_1" name="sns" value="Twitter" type="checkbox"><label for="sns_1">Twitter</label>
+						<input type="text" placeholder="例）@takeru_jon011">
+						<input id="sns_2" name="sns" value="Instagram" type="checkbox"><label for="sns_2">Instagram</label>
+						<input type="text" placeholder="例）takeru_jon011">
+						<input id="sns_3" name="sns" value="Youtube" type="checkbox"><label for="sns_3">Youtube</label>
+						<input type="text" placeholder="例）「ジョンくん」、URL">
+						<input id="sns_4" name="sns" value="その他" type="checkbox"><label for="sns_4">その他</label>
+						<input type="text" placeholder="例）SNS名＋ユーザー名・ID">
+					</div>
+				</div>
+				<div class="contact-form__row contact-form__row--required">
+					<label for="">事務所所属有無</label>
+					<div class="contact-form__checkboxes custom-checkboxes">
+						<input id="office_yes" name="office" value="所属している" type="checkbox"><label for="office_yes">所属している</label>
+						<input id="office_no" name="office" value="所属していない" type="checkbox"><label for="office_no">所属していない</label>
+					</div>
+					<input type="text" placeholder="例）ジョンソン事務所">
+				</div>
+				<div class="contact-form__row">
+					<label for="">ご質問、ご要望等</label>
+					<textarea name="" rows="8" placeholder="例）事務所の人とつなぎたいのですが、どうすれば良いでしょうか？"></textarea>
+				</div>
+				<div class="contact-form__terms">
+					<p>当社の個人情報保護方針について、<br>ご同意の上、確認画面へお進みくださいませ。</p>
+					<div class="contact-form__checkboxes custom-checkboxes">
+						<input id="agree" name="agree" value="同意する" type="checkbox"><label for="agree">同意する</label>
+					</div>
+				</div>
+				<input type="submit" value="入力内容確認" class="link-button">
+				<p class="contact-form__notice">
+					メディア、取材、事務所関係の業務提携等に関する<br>お問い合わせは<a href="#">こちら</a>をご利用くださいませ。
+				</p>
+			</form>
 		</div>
 	</section>
 </main>
