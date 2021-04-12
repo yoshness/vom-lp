@@ -11,6 +11,10 @@
 	    case '/vom-lp/confirm/':
         	require __DIR__ . '/views/register/confirm.php';
 	        break;
+	    case '/vom-lp/thank-you':
+	    case '/vom-lp/thank-you/':
+        	require __DIR__ . '/views/register/complete.php';
+	        break;
         default:
 	    	echo 'Page not found.';
 	        http_response_code(404);

@@ -1,0 +1,45 @@
+.l-complete {
+  padding-top: 200px;
+  text-align: center;
+
+  .section-title {
+    position: relative;
+    margin-bottom: 75px;
+
+    &:before,
+    &:after {
+      display: block;
+      width: 64px;
+      height: 71px;
+      position: absolute;
+      top: 0;
+      content: '';
+      background-image: url('./images/confetti.svg');
+      background-size: cover;
+    }
+    &:before {
+      left: 28%;
+      transform: scaleX(-1);
+    }
+    &:after {
+      left: 67%;
+    }
+  }
+  h3 {
+    font-size: 40px;
+  }
+  p {
+    line-height: 2.9;
+  }
+}
+.l-complete__notice {
+  margin-top: 80px;
+  font-size: 14px;
+  line-height: 2.3;
+  color: #727070;
+
+  a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+}
