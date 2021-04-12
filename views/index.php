@@ -17,7 +17,7 @@
 					ユーザーは目的に応じて好きな著名人に動画メッセージリクエストの送信が可能、
 					著名人は複数のリクエストからプレゼントしたいテーマを自ら選定し、自撮り動画を作成。
 					作成された世界にひとつだけの動画はユーザーに送られ、感動体験と勇気を与えます。
-					VOMは、エンタメパワーを最大化し、日本を元気にすると確信しています。
+				VOMは、エンタメパワーを最大化し、日本を元気にすると確信しています。
 				</p>
 			</div>
 			<div class="info-block__right">
@@ -179,9 +179,9 @@
 			<h2 class="section-title">日本中を本気で元気に<br>そして勇気を感動を。</h2>
 			<p>私には父との記憶がほとんどありません。父が仕事人間で家にいませんでした。<br>父は私が17歳の頃にガンで亡くなりました。父の葬式には5階建てのビルが全フロア埋まるほどの参列者がいました。<br>父は何をしている人なのか。私はその時初めて「時価総額1兆円を超える会社の北海道支社長」という<br>想像をはるかに超える偉大さを知りました。父から教わることはないと思いましたが、父の葬儀は、父の集大成であり<br>父が世の中に与え続けた、貢献し続けた結果なんだ、と強く実感しました。父は死をもって背中で教えてくれました。<br>現在、日本そして、世界はコロナ禍によって活力を失い、元気を失っています。<br>今こそエンタメの本質が問われています。日本を元気にするには、ファン一人一人を元気にする他ありません。<br>このサービスを通して、著名人からファン一人一人にメッセージを送ることが、日本を元気にすると確信しています。<br>どうか、事務所の皆様、ファンが付いている著名人の皆様、お力をお貸しください。</p>
 		</div>
-		<img src="<?php echo $domainPath; ?>public/images/index/message-flag.png"  class="rellax" data-rellax-speed="2">
+		<img src="<?php echo $domainPath; ?>public/images/japan-flag.png"  class="rellax" data-rellax-speed="2">
 	</section>
-	<section class="l-index__register">
+	<section class="l-contact">
 		<div class="l-container js-scroll-activate">
 			<h2 class="section-title">事前登録フォーム</h2>
 			<form action="#" method="POST" class="contact-form">
@@ -191,11 +191,11 @@
 				</div>
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">メールアドレス</label>
-					<input type="email" placeholder="例）vom@gamil.com">
+					<input type="email" placeholder="例）vom@gmail.com">
 				</div>
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">メールアドレス（再確認用）</label>
-					<input type="email" placeholder="例）vom@gamil.com">
+					<input type="email" placeholder="例）vom@gmail.com">
 				</div>
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">カテゴリ（複数選択可）</label>
@@ -232,14 +232,14 @@
 					<textarea name="" rows="8" placeholder="例）事務所の人とつなぎたいのですが、どうすれば良いでしょうか？"></textarea>
 				</div>
 				<div class="contact-form__terms">
-					<p>当社の個人情報保護方針について、<br>ご同意の上、確認画面へお進みくださいませ。</p>
+					<p>当社<a href="<?php echo $domainPath; ?>privacy">の個人情報保護方針</a>について、<br>ご同意の上、確認画面へお進みくださいませ。</p>
 					<div class="contact-form__checkboxes custom-checkboxes">
 						<input id="agree" name="agree" value="同意する" type="checkbox"><label for="agree">同意する</label>
 					</div>
 				</div>
 				<input type="submit" value="入力内容確認" class="link-button">
-				<p class="contact-form__notice">
-					メディア、取材、事務所関係の業務提携等に関する<br>お問い合わせは<a href="#">こちら</a>をご利用くださいませ。
+				<p class="l-complete__notice">
+					メディア、取材、事務所関係の業務提携等に関する<br>お問い合わせは<a href="<?php echo $domainPath; ?>contact">こちら</a>をご利用くださいませ。
 				</p>
 			</form>
 		</div>

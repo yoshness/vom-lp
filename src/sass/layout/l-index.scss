@@ -231,31 +231,3 @@
     left: 170px;
   }
 }
-
-.l-index__register {
-  text-align: center;
-
-  .section-title {
-    position: relative;
-    margin-bottom: 75px;
-
-    &:before,
-    &:after {
-      display: block;
-      width: 64px;
-      height: 71px;
-      position: absolute;
-      top: 0;
-      content: '';
-      background-image: url('./images/confetti.svg');
-      background-size: cover;
-    }
-    &:before {
-      left: 23%;
-      transform: scaleX(-1);
-    }
-    &:after {
-      left: 72%;
-    }
-  }
-}

@@ -1,7 +1,7 @@
 <?php 
+	$domainPath = '/vom-lp/';
 	include 'partials/header.php';
 
-	$domainPath = '/vom-lp/';
 	$request = $_SERVER['REQUEST_URI'];
 	switch ($request) {
 	    case '/vom-lp/':
@@ -14,6 +14,22 @@
 	    case '/vom-lp/thank-you':
 	    case '/vom-lp/thank-you/':
         	require __DIR__ . '/views/register/complete.php';
+	        break;
+	    case '/vom-lp/contact':
+	    case '/vom-lp/contact/':
+        	require __DIR__ . '/views/contact/contact.php';
+	        break;
+	    case '/vom-lp/contact-confirm':
+	    case '/vom-lp/contact-confirm/':
+        	require __DIR__ . '/views/contact/confirm.php';
+	        break;
+	    case '/vom-lp/contact-complete':
+	    case '/vom-lp/contact-complete/':
+        	require __DIR__ . '/views/contact/complete.php';
+	        break;
+	    case '/vom-lp/privacy':
+	    case '/vom-lp/privacy/':
+        	require __DIR__ . '/views/privacy.php';
 	        break;
         default:
 	    	echo 'Page not found.';

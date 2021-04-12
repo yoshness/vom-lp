@@ -1,5 +1,6 @@
 .contact-form {
   width: 1000px;
+  position: relative;
   margin: 0 auto;
 
   input[type='submit'] {
@@ -67,6 +68,16 @@
   label {
     &:after {
       top: -1px !important;
+    }
+  }
+  a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    transition: all $duration $easing;
+
+    &:hover {
+      color: $color-primary;
+      border-color: $color-primary;
     }
   }
 }

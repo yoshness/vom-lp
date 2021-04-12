@@ -1,0 +1,44 @@
+.l-contact {
+  text-align: center;
+
+  &.l-contact--sub {
+    padding: 200px 0 120px;
+  }
+
+  .section-title {
+    position: relative;
+    margin-bottom: 75px;
+
+    &:before,
+    &:after {
+      display: block;
+      width: 64px;
+      height: 71px;
+      position: absolute;
+      top: 0;
+      content: '';
+      background-image: url('./images/confetti.svg');
+      background-size: cover;
+    }
+    &:before {
+      left: 23%;
+      transform: scaleX(-1);
+    }
+    &:after {
+      left: 72%;
+    }
+  }
+}
+
+.l-contact__message {
+  margin-bottom: 90px;
+  line-height: 2.9;
+}
+
+.l-contact__flag {
+  width: 605px;
+  height: 390px;
+  position: absolute;
+  top: 150px;
+  left: 0;
+}

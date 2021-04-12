@@ -76,5 +76,11 @@
   a {
     color: #fff;
     border-bottom: 1px solid #fff;
+    transition: all $duration $easing;
+
+    &:hover {
+      color: $color-primary;
+      border-color: $color-primary;
+    }
   }
 }

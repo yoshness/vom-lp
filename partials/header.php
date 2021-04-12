@@ -23,7 +23,7 @@
 
 	<body>
 		<header class="header">
-			<a href="">
+			<a href="<?php echo $domainPath; ?>">
 				<img src="<?php echo $domainPath; ?>public/images/logo.png" class="header__logo"></img>
 			</a>
 		</header>

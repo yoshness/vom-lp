@@ -1,0 +1,19 @@
+.privacy {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+
+  p {
+    margin-bottom: 30px;
+    letter-spacing: -.03em;
+  }
+
+  a {
+    color: #fff;
+    transition: color $duration $easing;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
