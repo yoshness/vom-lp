@@ -1,4 +1,4 @@
-		<footer class="l-footer">
+		<footer class="footer">
 			<small>Copyright © 2021 Wunderbar Inc. All Rights Reserved.</small>
 		</footer>
 		<script src="./public/app.js"></script>

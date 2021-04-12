@@ -1,8 +1,5 @@
 <main class="l-index">
 	<div class="hero u-flex u-flex--center">
-		<a href="">
-			<img src="<?php echo $domainPath; ?>public/images/logo.svg" class="hero__logo"></img>
-		</a>
 		<div class="l-container">
 			<h1 class="hero__title">
 				Special surprise that<br>

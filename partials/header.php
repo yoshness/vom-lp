@@ -22,4 +22,9 @@
 	</head>
 
 	<body>
+		<header class="header">
+			<a href="">
+				<img src="<?php echo $domainPath; ?>public/images/logo.png" class="header__logo"></img>
+			</a>
+		</header>
 

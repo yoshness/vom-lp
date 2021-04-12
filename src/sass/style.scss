@@ -5,6 +5,7 @@
 @import 'lib/media-queries';
 @import 'lib/utility';
 
+@import 'modules/header';
 @import 'modules/hero';
 @import 'modules/info-block';
 @import 'modules/description-block';
@@ -13,7 +14,8 @@
 @import 'modules/contact-form';
 @import 'modules/custom-checkboxes';
 @import 'modules/link-button';
+@import 'modules/footer';
 
 @import 'layout/l-container';
 @import 'layout/l-index';
-@import 'layout/l-footer';
+@import 'layout/l-confirm';

@@ -1,0 +1,80 @@
+.l-confirm {
+  padding-top: 200px;
+  text-align: center;
+
+  .section-title {
+    position: relative;
+    margin-bottom: 75px;
+
+    &:before,
+    &:after {
+      display: block;
+      width: 64px;
+      height: 71px;
+      position: absolute;
+      top: 0;
+      content: '';
+      background-image: url('./images/confetti.svg');
+      background-size: cover;
+    }
+    &:before {
+      left: 23%;
+      transform: scaleX(-1);
+    }
+    &:after {
+      left: 72%;
+    }
+  }
+
+  input[type='submit'] {
+    font-weight: bold;
+  }
+}
+.l-confirm__row {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: left;
+  border-top: 1px solid #707070;
+
+  &:last-of-type {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #707070;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+.l-confirm__back {
+  display: block;
+  margin-top: 65px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  transition: color $duration $easing;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.l-confirm__notice {
+  margin-top: 80px;
+  font-size: 14px;
+  line-height: 2.3;
+  color: #727070;
+
+  a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+}
