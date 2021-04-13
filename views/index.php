@@ -184,18 +184,18 @@
 	<section class="l-contact">
 		<div class="l-container js-scroll-activate">
 			<h2 class="section-title">事前登録フォーム</h2>
-			<form action="#" method="POST" class="contact-form">
+			<form action="" method="POST" class="contact-form">
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">活動名、芸名</label>
-					<input type="text" placeholder="例）タケル  ジョンソン">
+					<input type="text" placeholder="例）タケル  ジョンソン" name="stage_name">
 				</div>
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">メールアドレス</label>
-					<input type="email" placeholder="例）vom@gmail.com">
+					<input type="email" placeholder="例）vom@gmail.com" name="email">
 				</div>
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">メールアドレス（再確認用）</label>
-					<input type="email" placeholder="例）vom@gmail.com">
+					<input type="email" placeholder="例）vom@gmail.com" name="email-confirm">
 				</div>
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">カテゴリ（複数選択可）</label>
@@ -209,27 +209,27 @@
 				<div class="contact-form__row">
 					<label for="">SNS情報（最低1つご記入ください）</label>
 					<div class="contact-form__sns custom-checkboxes u-flex u-flex--center">
-						<input id="sns_1" name="sns" value="Twitter" type="checkbox"><label for="sns_1">Twitter</label>
-						<input type="text" placeholder="例）@takeru_jon011">
-						<input id="sns_2" name="sns" value="Instagram" type="checkbox"><label for="sns_2">Instagram</label>
-						<input type="text" placeholder="例）takeru_jon011">
-						<input id="sns_3" name="sns" value="Youtube" type="checkbox"><label for="sns_3">Youtube</label>
-						<input type="text" placeholder="例）「ジョンくん」、URL">
-						<input id="sns_4" name="sns" value="その他" type="checkbox"><label for="sns_4">その他</label>
-						<input type="text" placeholder="例）SNS名＋ユーザー名・ID">
+						<input id="sns_1" name="sns_1" value="Twitter" type="checkbox"><label for="sns_1">Twitter</label>
+						<input type="text" placeholder="例）@takeru_jon011" name="sns_twitter">
+						<input id="sns_2" name="sns_2" value="Instagram" type="checkbox"><label for="sns_2">Instagram</label>
+						<input type="text" placeholder="例）takeru_jon011" name="sns_instagram">
+						<input id="sns_3" name="sns_3" value="Youtube" type="checkbox"><label for="sns_3">Youtube</label>
+						<input type="text" placeholder="例）「ジョンくん」、URL" name="sns_youtube">
+						<input id="sns_4" name="sns_4" value="その他" type="checkbox"><label for="sns_4">その他</label>
+						<input type="text" placeholder="例）SNS名＋ユーザー名・ID" name="sns_other">
 					</div>
 				</div>
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">事務所所属有無</label>
 					<div class="contact-form__checkboxes custom-checkboxes">
-						<input id="office_yes" name="office" value="所属している" type="checkbox"><label for="office_yes">所属している</label>
-						<input id="office_no" name="office" value="所属していない" type="checkbox"><label for="office_no">所属していない</label>
+						<input id="office_yes" name="office" value="所属している" type="radio"><label for="office_yes">所属している</label>
+						<input id="office_no" name="office" value="所属していない" type="radio"><label for="office_no">所属していない</label>
 					</div>
 					<input type="text" placeholder="例）ジョンソン事務所">
 				</div>
 				<div class="contact-form__row">
 					<label for="">ご質問、ご要望等</label>
-					<textarea name="" rows="8" placeholder="例）事務所の人とつなぎたいのですが、どうすれば良いでしょうか？"></textarea>
+					<textarea name="message" rows="8" placeholder="例）事務所の人とつなぎたいのですが、どうすれば良いでしょうか？"></textarea>
 				</div>
 				<div class="contact-form__terms">
 					<p>当社<a href="<?php echo $domainPath; ?>privacy">の個人情報保護方針</a>について、<br>ご同意の上、確認画面へお進みくださいませ。</p>
@@ -237,7 +237,7 @@
 						<input id="agree" name="agree" value="同意する" type="checkbox"><label for="agree">同意する</label>
 					</div>
 				</div>
-				<input type="submit" value="入力内容確認" class="link-button">
+				<input type="submit" name="submit" value="入力内容確認" class="link-button">
 				<p class="l-complete__notice">
 					メディア、取材、事務所関係の業務提携等に関する<br>お問い合わせは<a href="<?php echo $domainPath; ?>contact">こちら</a>をご利用くださいませ。
 				</p>

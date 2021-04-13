@@ -22,6 +22,7 @@
 	</head>
 
 	<body>
+		<?php include 'partials/mail.php'; ?>
 		<header class="header">
 			<a href="<?php echo $domainPath; ?>">
 				<img src="<?php echo $domainPath; ?>public/images/logo.png" class="header__logo"></img>
