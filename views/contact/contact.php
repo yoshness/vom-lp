@@ -3,22 +3,26 @@
 		<h2 class="section-title">お問い合わせ</h2>
 		<p class="l-contact__message">こちらでは、サービスに関するご質問、資料請求、メディア・取材等の問い合わせ窓口を設置しております。<br>「日本を元気にする」私たちはこれに全てをかけて挑んでおります。皆様のお力が必要です。<br>業務提携やメディアとして発信いただける会社様は以下よりご連絡をお待ちしております。</p>
 		<img src="<?php echo $domainPath; ?>public/images/japan-flag.png"  class="l-contact__flag rellax" data-rellax-speed="-2">
-		<form action="#" method="POST" class="contact-form">
+		<form action="" method="POST" class="contact-form" id="js-contact-form">
 			<div class="contact-form__row contact-form__row--required">
 				<label for="">会社名</label>
-				<input type="text" placeholder="例）ボム・プロダクション">
+				<input type="text" placeholder="例）ボム・プロダクション" name="company">
 			</div>
 			<div class="contact-form__row contact-form__row--required">
 				<label for="">担当名</label>
-				<input type="text" placeholder="例）ボム">
+				<input type="text" placeholder="例）ボム" name="person">
 			</div>
 			<div class="contact-form__row contact-form__row--required">
 				<label for="">メールアドレス</label>
-				<input type="email" placeholder="例）vvv@gmail.com">
+				<input type="email" placeholder="例）vvv@gmail.com" name="email">
 			</div>
 			<div class="contact-form__row contact-form__row--required">
 				<label for="">メールアドレス（再確認用）</label>
-				<input type="email" placeholder="例）vvv@gmail.com">
+				<input type="email" placeholder="例）vvv@gmail.com" name="email">
+			</div>
+			<div class="contact-form__row contact-form__row--required">
+				<label for="">電話番号</label>
+				<input type="text" placeholder="080-1234-5678" name="phone">
 			</div>
 			<div class="contact-form__row contact-form__row--required">
 				<label for="">カテゴリ（複数選択可）</label>
@@ -33,9 +37,9 @@
 			</div>
 			<div class="contact-form__row">
 				<label for="">備考</label>
-				<textarea name="" rows="8" placeholder="例）事務所の人とつなぎたいのですが、どうすれば良いでしょうか？"></textarea>
+				<textarea name="message" rows="8" placeholder="例）事務所の人とつなぎたいのですが、どうすれば良いでしょうか？"></textarea>
 			</div>
-			<input type="submit" value="入力内容確認" class="link-button">
+			<a href="<?php echo $domainPath; ?>contact-confirm" class="link-button" id="js-contact-confirm">入力内容確認</a>
 		</form>
 	</div>
 </main>

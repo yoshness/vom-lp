@@ -184,7 +184,7 @@
 	<section class="l-contact">
 		<div class="l-container js-scroll-activate">
 			<h2 class="section-title">事前登録フォーム</h2>
-			<form action="" method="POST" class="contact-form">
+			<form action="" method="POST" class="contact-form" id="js-register-form">
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">活動名、芸名</label>
 					<input type="text" placeholder="例）タケル  ジョンソン" name="stage_name">
@@ -202,7 +202,7 @@
 					<div class="contact-form__checkboxes custom-checkboxes">
 						<input id="category_1" name="category" value="女優" type="checkbox"><label for="category_1">女優</label>
 						<input id="category_2" name="category" value="俳優" type="checkbox"><label for="category_2">俳優</label>
-						<input id="category_3" name="category" value="芸人" type="checkbox"><label for="category_3">俳優</label>
+						<input id="category_3" name="category" value="芸人" type="checkbox"><label for="category_3">芸人</label>
 					</div>
 					<input type="text" placeholder="例）その他の場合は、ご記入ください。">
 				</div>
@@ -237,7 +237,7 @@
 						<input id="agree" name="agree" value="同意する" type="checkbox"><label for="agree">同意する</label>
 					</div>
 				</div>
-				<input type="submit" name="submit" value="入力内容確認" class="link-button">
+				<a href="<?php echo $domainPath; ?>confirm" class="link-button" id="js-register-confirm">入力内容確認</a>
 				<p class="l-complete__notice">
 					メディア、取材、事務所関係の業務提携等に関する<br>お問い合わせは<a href="<?php echo $domainPath; ?>contact">こちら</a>をご利用くださいませ。
 				</p>

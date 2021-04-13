@@ -2,14 +2,7 @@
 	$stage_name = $_POST['stage_name'];
 	$email = $_POST['email'];
 	$category = $_POST['category'];
-	$sns_1 = $_POST['sns_1'];
-	$sns_2 = $_POST['sns_2'];
-	$sns_3 = $_POST['sns_3'];
-	$sns_4 = $_POST['sns_4'];
-	$twitter = $_POST['sns_twitter'];
-	$instagram = $_POST['sns_instagram'];
-	$youtube = $_POST['sns_youtube'];
-	$sns_other = $_POST['sns_other'];
+	$sns = $_POST['sns'];
 	$office = $_POST['office'];
 	$message = $_POST['message'];
 	$recipient = "josiah.dabuet@gmail.com";
@@ -17,10 +10,10 @@
 	$sender = $_POST['email'];
 
 	$subject_admin = "【VOM】お問い合わせがありました。";
-	$content_admin ="下記の内容でVOMより問い合わせがありました。\n折り返しの対応をお願いいたします。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns_1: $twitter \n$sns_2: $instagram \n$sns_3: $youtube \n$sns_4: $sns_other \n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n-----";
+	$content_admin ="下記の内容でVOMより問い合わせがありました。\n折り返しの対応をお願いいたします。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n-----";
 
 	$subject_sender = "【VOM】お問い合わせありがとうございます。";
-	$content_sender ="$person 様\n\nVOMにお問い合わせいただきありがとうございます。\n下記の内容でお問い合わせをうけたまわりました。\n弊社で内容を確認の上、折り返しご連絡いたしますのでいましばらくお待ち下さい。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns_1: $twitter \n$sns_2: $instagram \n$sns_3: $youtube \n$sns_4: $sns_other \n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n-----\n\nこちらのメールは VOM (https://vom.com) の無料相談フォームから送信されました。\nなお、こちらのメールは自動返信メールとなっております。";
+	$content_sender ="$person 様\n\nVOMにお問い合わせいただきありがとうございます。\n下記の内容でお問い合わせをうけたまわりました。\n弊社で内容を確認の上、折り返しご連絡いたしますのでいましばらくお待ち下さい。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n-----\n\nこちらのメールは VOM (https://vom.com) の無料相談フォームから送信されました。\nなお、こちらのメールは自動返信メールとなっております。";
 
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\Exception;
@@ -83,6 +76,16 @@
 			$mail2->Subject = $subject_sender;
 			$mail2->Body    = $content_sender;
 			$mail2->send();
+
+			if(!$mail->send()) 
+			{
+			    echo "Mailer Error: " . $mail->ErrorInfo;
+			} 
+			else 
+			{
+			    header("Location: ".$domainPath."thank-you", TRUE, 301);
+				exit();
+			}
 		// }
 	}
 ?>
