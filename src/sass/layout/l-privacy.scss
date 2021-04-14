@@ -2,9 +2,17 @@
   padding: 200px 0 120px;
   text-align: center;
 
+  @include max-screen($breakpoint-mobile) {
+    padding: 120px 0 50px;
+  }
+
   .section-title {
     position: relative;
     margin-bottom: 75px;
+
+    @include max-screen($breakpoint-mobile) {
+      margin-bottom: 60px;
+    }
 
     &:before,
     &:after {
@@ -16,13 +24,27 @@
       content: '';
       background-image: url('./images/confetti.svg');
       background-size: cover;
+
+      @include max-screen($breakpoint-mobile) {
+        width: 38px;
+        height: 42px;
+        top: 5px;
+      }
     }
     &:before {
       left: 26%;
       transform: scaleX(-1);
+
+      @include max-screen($breakpoint-mobile) {
+        left: 0;
+      }
     }
     &:after {
       left: 70%;
+
+      @include max-screen($breakpoint-mobile) {
+        left: 90%;
+      }
     }
   }
 

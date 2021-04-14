@@ -43,18 +43,18 @@
       }
     }
     &:before {
-      left: 28%;
+      left: 25%;
       transform: scaleX(-1);
 
       @include max-screen($breakpoint-mobile) {
-        left: 3%;
+        left: 0;
       }
     }
     &:after {
-      left: 67%;
+      left: 70%;
 
       @include max-screen($breakpoint-mobile) {
-        left: 87%;
+        left: 90%;
       }
     }
   }

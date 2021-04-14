@@ -2,7 +2,7 @@
   &.info-block--reverse {
     .info-block__left {
       padding-right: 0;
-      padding-left: 120px;
+      padding-left: 80px;
 
       order: 2;
       @include max-screen($breakpoint-mobile) {
@@ -16,9 +16,9 @@
 }
 
 .info-block__left {
-  width: 57%;
+  width: 61%;
   position: relative;
-  padding-right: 120px;
+  padding-right: 80px;
 
   @include max-screen($breakpoint-mobile) {
     width: 100%;
@@ -55,7 +55,7 @@
 }
 
 .info-block__right {
-  width: 43%;
+  width: 39%;
   position: relative;
 
   @include max-screen($breakpoint-mobile) {

@@ -25,7 +25,7 @@
         width: 275px;
         height: 570px;
         top: -120px;
-        left: 20vw;
+        left: 15vw;
 
         @include max-screen($breakpoint-mobile) {
           width: 134px;
@@ -96,8 +96,8 @@
       &:first-of-type {
         width: 289px;
         height: 247px;
-        top: -120px;
-        left: 220px;
+        top: 0;
+        left: 170px;
 
         @include max-screen($breakpoint-mobile) {
           width: 149px;
@@ -109,24 +109,26 @@
       &:nth-of-type(2) {
         width: 262px;
         height: 224px;
-        top: 120px;
-        left: -240px;
+        top: 0;
+        left: -50px;
 
         @include max-screen($breakpoint-mobile) {
           width: 154px;
           height: 131px;
-          left: -38vw;
+          top: 120px;
+          left: -35vw;
         }
       }
       &:last-of-type {
         width: 264px;
         height: 225px;
-        top: 100px;
-        left: 270px;
+        top: 0;
+        left: 180px;
 
         @include max-screen($breakpoint-mobile) {
           width: 183px;
           height: 157px;
+          top: 120px;
           left: 40vw;
         }
       }
@@ -232,10 +234,10 @@
       width: 62px;
       height: 69px;
       position: absolute;
-      top: 0;
+      top: 5px;
       right: 0;
       background-color: $color-primary;
-      transform: translateX(-11vw);
+      transform: translateX(-8vw);
 
       mask-size: contain;
       mask-repeat: no-repeat;
@@ -298,7 +300,7 @@
         }
       }
       &:last-of-type {
-        width: 800px;
+        width: 650px;
         top: -350px;
 
         @include max-screen($breakpoint-mobile) {
@@ -313,7 +315,7 @@
 
 .l-index__monetize-note {
   position: absolute;
-  bottom: 280px;
+  bottom: 230px;
   font-size: 12px;
 
   @include max-screen($breakpoint-mobile) {
@@ -349,9 +351,11 @@
 }
 
 .l-index__target {
+  padding-top: 50px;
   padding-bottom: 200px;
 
   @include max-screen($breakpoint-mobile) {
+    padding-top: 0;
     padding-bottom: 100px;
   }
 

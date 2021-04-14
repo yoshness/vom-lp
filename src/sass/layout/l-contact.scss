@@ -40,7 +40,7 @@
       }
     }
     &:before {
-      left: 23%;
+      left: 19%;
       transform: scaleX(-1);
 
       @include max-screen($breakpoint-mobile) {
@@ -48,7 +48,7 @@
       }
     }
     &:after {
-      left: 72%;
+      left: 75%;
 
       @include max-screen($breakpoint-mobile) {
         left: 90%;
@@ -62,9 +62,9 @@
   line-height: 2.9;
 
   @include max-screen($breakpoint-mobile) {
+    margin-bottom: 70px;
     font-size: 16px;
     line-height: 2.125;
-    margin-bottom: 70px;
   }
 }
 
