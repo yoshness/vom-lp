@@ -5,7 +5,7 @@
 				Special surprise that<br>
 				Only you can do <i></i>
 			</h1>
-			<p class="hero__description">あなたにしか出来ない、特別なサプライズを。</p>
+			<p class="hero__description">あなたにしか出来ない、<br class="u-show-sp">特別なサプライズを。</p>
 		</div>
 	</div>
 	<section class="l-index__intro">
@@ -28,7 +28,7 @@
 	</section>
 	<section class="l-index__function">
 		<div class="l-container u-flex js-scroll-activate">
-			<h2 class="section-title">VOMは何ができるの？</h2>
+			<h2 class="section-title">VOMは<br class="u-show-sp">何ができるの？</h2>
 			<ul class="u-flex u-flex--center">
 				<li class="description-block">
 					<img src="<?php echo $domainPath; ?>public/images/index/function-1.png" alt="">
@@ -65,7 +65,7 @@
 	</section> 
 	<section class="l-index__notice u-bg-fill" style="background-image: url(<?php echo $domainPath; ?>public/images/index/notice-1.jpg);">
 		<div class="u-flex u-flex--center js-scroll-activate">
-			<h2>超有名タレント、著名人続々登録！</h2>
+			<h2>超有名タレント、<br class="u-show-sp">著名人続々登録！</h2>
 			<p>事前登録1,000人突破</p>
 			<a href="#" class="u-flex u-flex--center">事前登録する</a>
 		</div>
@@ -150,7 +150,7 @@
 	</section>
 	<section class="l-index__notice u-bg-fill" style="background-image: url(<?php echo $domainPath; ?>public/images/index/notice-2.png); margin-bottom: 150px;">
 		<div class="u-flex u-flex--center js-scroll-activate">
-			<h2>超有名タレント、著名人続々登録！</h2>
+			<h2>超有名タレント、<br class="u-show-sp">著名人続々登録！</h2>
 			<p>事前登録1,000人突破</p>
 			<a href="#" class="u-flex u-flex--center">事前登録する</a>
 		</div>

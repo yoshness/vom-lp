@@ -4,6 +4,7 @@
   margin-top: 50px;
   padding: 25px 0;
   font-size: 14px;
+  font-weight: bold;
   cursor: pointer;
   text-align: center;
   color: $color-primary;
@@ -12,6 +13,10 @@
   background-position: 100% 0;
   background-size: 200% 100%;
   transition: background-position $duration $easing, color $duration $easing;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+  }
 
   &:hover {
     color: #101010;

@@ -40,6 +40,10 @@
   line-height: 2.3;
   color: #727070;
 
+  @include max-screen($breakpoint-mobile) {
+    margin-top: 60px;
+  }
+
   a {
     color: #fff;
     border-bottom: 1px solid #fff;

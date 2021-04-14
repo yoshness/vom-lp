@@ -6,7 +6,7 @@
 	$category = $_POST['category'];
 	$message = $_POST['message'];
 	$recipient = "josiah.dabuet@gmail.com";
-	// $recipient2 = "uketsuke@012grp.co.jp";
+	$recipient2 = "itoshun14@gmail.com";
 	$sender = $_POST['email'];
 
 	$subject_admin = "【VOM】お問い合わせがありました。";
@@ -30,7 +30,7 @@
 		$mail->Encoding = 'base64';
 		$mail->setFrom('no-reply@vom.com', 'お問い合わせ');
 	    $mail->addAddress($recipient);
-	    // $mail->addAddress($recipient2);
+	    $mail->addAddress($recipient2);
 	    $mail->Subject = $subject_admin;
 		$mail->Body    = $content_admin;
 		$mail->send();

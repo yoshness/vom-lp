@@ -5,6 +5,9 @@
       padding-left: 120px;
 
       order: 2;
+      @include max-screen($breakpoint-mobile) {
+        padding-left: 0;
+      }
     }
     .info-block__right {
       order: 1;
@@ -17,14 +20,32 @@
   position: relative;
   padding-right: 120px;
 
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+    padding-right: 0;
+
+    order: 2;
+  }
+
   h2 {
     margin-bottom: 90px;
     font-size: 70px;
     font-weight: bold;
+
+    @include max-screen($breakpoint-mobile) {
+      margin-bottom: 30px;
+      font-size: 38px;
+      line-height: 1.35;
+    }
   }
 
   p {
     line-height: 2.8;
+
+    @include max-screen($breakpoint-mobile) {
+      font-size: 16px;
+      line-height: 2.125;
+    }
 
     em {
       font-style: initial;
@@ -36,6 +57,12 @@
 .info-block__right {
   width: 43%;
   position: relative;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+
+    order: 1;
+  }
 
   img {
     position: relative;

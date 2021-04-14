@@ -8,10 +8,20 @@
   border-radius: 10px;
   background-color: #191919;
 
+  @include max-screen($breakpoint-mobile) {
+    padding: 30px 30px 30px 50px;
+  }
+
   label {
     display: inline-block;
     margin-right: 30px;
     margin-left: -60px;
+
+    @include max-screen($breakpoint-mobile) {
+      margin-right: 0;
+      margin-left: -40px;
+      vertical-align: top;
+    }
   }
 
   &.is-active {
@@ -26,6 +36,11 @@
         border-top-color: $color-primary;
         border-right-color: $color-primary;
         transform: rotate(135deg);
+
+        @include max-screen($breakpoint-mobile) {
+          top: 8px;
+          right: -21px;
+        }
       }
     }
     .faq-block__description {
@@ -40,6 +55,11 @@
   position: relative;
   font-weight: 500;
 
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+    font-size: 16px;
+  }
+
   &:before {
     display: block;
     width: 24px;
@@ -51,6 +71,13 @@
     border: 2px solid #fff;
     border-radius: 50%;
     transition: all $duration $easing;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 19px;
+      height: 19px;
+      top: 2px;
+      right: -28px;
+    }
   }
   &:after {
     display: block;
@@ -64,6 +91,15 @@
     border-right: 3px solid #fff;
     transition: all $duration $easing;
     transform: rotate(45deg);
+
+    @include max-screen($breakpoint-mobile) {
+      width: 5px;
+      height: 5px;
+      top: 9px;
+      right: -20px;
+      border-top-width: 2px;
+      border-right-width: 2px;
+    }
   }
 }
 
@@ -71,4 +107,9 @@
   display: none;
   margin-top: 50px;
   font-weight: 600;
+
+  @include max-screen($breakpoint-mobile) {
+    margin-top: 30px;
+    font-size: 16px;
+  }
 }

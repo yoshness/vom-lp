@@ -9,6 +9,10 @@
     position: relative;
     margin-bottom: 75px;
 
+    @include max-screen($breakpoint-mobile) {
+      font-size: 35px;
+    }
+
     &:before,
     &:after {
       display: block;
@@ -19,13 +23,26 @@
       content: '';
       background-image: url('./images/confetti.svg');
       background-size: cover;
+
+      @include max-screen($breakpoint-mobile) {
+        width: 44px;
+        height: 49px;
+      }
     }
     &:before {
       left: 23%;
       transform: scaleX(-1);
+
+      @include max-screen($breakpoint-mobile) {
+        left: -7px;
+      }
     }
     &:after {
       left: 72%;
+
+      @include max-screen($breakpoint-mobile) {
+        left: 90%;
+      }
     }
   }
 }
