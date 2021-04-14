@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="no-js" id="tabikana-page">
+<html class="no-js">
 	<head>
 		<meta charset="UTF-8">
 		<meta property="og:type" content="website" />

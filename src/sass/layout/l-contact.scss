@@ -3,6 +3,16 @@
 
   &.l-contact--sub {
     padding: 200px 0 120px;
+
+    @include max-screen($breakpoint-mobile) {
+      padding-top: 120px;
+    }
+
+    .section-title {
+      @include max-screen($breakpoint-mobile) {
+        margin-bottom: 60px;
+      }
+    }
   }
 
   .section-title {
@@ -50,6 +60,12 @@
 .l-contact__message {
   margin-bottom: 90px;
   line-height: 2.9;
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 16px;
+    line-height: 2.125;
+    margin-bottom: 70px;
+  }
 }
 
 .l-contact__flag {
@@ -58,4 +74,9 @@
   position: absolute;
   top: 150px;
   left: 0;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 240px;
+    height: auto;
+  }
 }
