@@ -1,9 +1,9 @@
 .link-button {
   display: inline-block;
-  width: 260px;
+  width: 240px;
   margin-top: 50px;
-  padding: 25px 0;
-  font-size: 14px;
+  padding: 20px 0;
+  font-size: 12px;
   font-weight: bold;
   cursor: pointer;
   text-align: center;
@@ -15,7 +15,7 @@
   transition: background-position $duration $easing, color $duration $easing;
 
   @include max-screen($breakpoint-mobile) {
-    width: 100%;
+    width: 100%;;
   }
 
   &:hover {

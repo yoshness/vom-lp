@@ -1,3 +1,31 @@
+.l-index {
+  position: relative;
+
+  &:before {
+    width: 100%;
+    height: calc(100% + 104px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background-image: url('./images/home-decor.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include max-screen($breakpoint-mobile) {
+      height: 100%;
+      background-image: url('./images/home-decor-sp.png');
+    }
+  }
+
+  .l-contact {
+    &:before {
+      display: none;
+    }
+  }
+}
+
 .l-index__intro {
   @include max-screen($breakpoint-mobile) {
     padding-top: 100px;
@@ -10,8 +38,7 @@
 
     img {
       &:first-of-type {
-        width: 553px;
-        height: 356px;
+        width: 500px;
         z-index: 1;
         top: 300px;
 
@@ -22,8 +49,7 @@
         }
       }
       &:last-of-type {
-        width: 275px;
-        height: 570px;
+        width: 250px;
         top: -120px;
         left: 15vw;
 
@@ -39,7 +65,7 @@
 }
 
 .l-index__function {
-  padding-top: 120px;
+  padding-top: 80px;
   text-align: center;
 
   @include max-screen($breakpoint-mobile) {
@@ -47,7 +73,7 @@
   }
 
   ul {
-    margin-top: 130px;
+    margin-top: 100px;
 
     @include max-screen($breakpoint-mobile) {
       margin-top: 30px;
@@ -80,7 +106,7 @@
 }
 
 .l-index__use {
-  padding: 350px 0 320px;
+  padding: 300px 0 200px;
 
   @include max-screen($breakpoint-mobile) {
     padding-bottom: 80px;
@@ -94,9 +120,8 @@
 
     img {
       &:first-of-type {
-        width: 289px;
-        height: 247px;
-        top: 0;
+        width: 235px;
+        top: -60px;
         left: 170px;
 
         @include max-screen($breakpoint-mobile) {
@@ -107,10 +132,9 @@
         }
       }
       &:nth-of-type(2) {
-        width: 262px;
-        height: 224px;
-        top: 0;
-        left: -50px;
+        width: 225px;
+        top: 140px;
+        left: -250px;
 
         @include max-screen($breakpoint-mobile) {
           width: 154px;
@@ -120,9 +144,8 @@
         }
       }
       &:last-of-type {
-        width: 264px;
-        height: 225px;
-        top: 0;
+        width: 235px;
+        top: 90px;
         left: 180px;
 
         @include max-screen($breakpoint-mobile) {
@@ -138,7 +161,8 @@
 
 .l-index__notice {
   justify-content: center;
-  padding: 105px 0;
+  position: relative;
+  padding: 85px 0;
   text-align: center;
 
   @include max-screen($breakpoint-mobile) {
@@ -147,8 +171,8 @@
 
   h2 {
     width: 100%;
-    margin-bottom: 70px;
-    font-size: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
     font-weight: bold;
 
     @include max-screen($breakpoint-mobile) {
@@ -160,7 +184,7 @@
     width: 100%;
     position: relative;
     margin-bottom: 30px;
-    font-size: 26px;
+    font-size: 23px;
     font-weight: bold;
     color: $color-secondary;
 
@@ -204,10 +228,10 @@
   }
   a {
     justify-content: center;
-    width: 534px;
+    width: 475px;
     margin: 0 auto;
-    padding: 40px 0;
-    font-size: 26px;
+    padding: 30px 0;
+    font-size: 23px;
     font-weight: bold;
     color: #fff;
     border-radius: 10px;
@@ -222,7 +246,7 @@
 }
 
 .l-index__overseas {
-  padding: 180px 0 0;
+  padding: 120px 0 0;
 
   @include max-screen($breakpoint-mobile) {
     padding-top: 120px;
@@ -237,7 +261,7 @@
       top: 5px;
       right: 0;
       background-color: $color-primary;
-      transform: translateX(-8vw);
+      transform: translateX(-11vw);
 
       mask-size: contain;
       mask-repeat: no-repeat;
@@ -267,8 +291,8 @@
         }
       }
       &:last-of-type {
-        width: 663px;
-        height: 440px;
+        width: 623px;
+        height: auto;
         top: 0;
 
         @include max-screen($breakpoint-mobile) {
@@ -281,7 +305,10 @@
 }
 
 .l-index__monetize {
+  margin-top: -100px;
+
   @include max-screen($breakpoint-mobile) {
+    margin-top: 0;
     padding-bottom: 80px;
   }
 
@@ -315,8 +342,8 @@
 
 .l-index__monetize-note {
   position: absolute;
-  bottom: 230px;
-  font-size: 12px;
+  bottom: 250px;
+  font-size: 10px;
 
   @include max-screen($breakpoint-mobile) {
     bottom: 100px;
@@ -351,19 +378,16 @@
 }
 
 .l-index__target {
-  padding-top: 50px;
-  padding-bottom: 200px;
+  padding: 100px 0 150px;
 
   @include max-screen($breakpoint-mobile) {
-    padding-top: 0;
     padding-bottom: 100px;
   }
 
   .info-block__right {
     img {
       &:first-of-type {
-        width: 553px;
-        height: 356px;
+        width: 480px;
         z-index: 1;
         top: -30px;
 
@@ -373,10 +397,9 @@
         }
       }
       &:last-of-type {
-        width: 427px;
-        height: 275px;
+        width: 350px;
         top: -80px;
-        left: 250px;
+        left: 150px;
 
         @include max-screen($breakpoint-mobile) {
           width: 223px;
@@ -399,8 +422,8 @@
   }
 
   h3 {
-    margin-bottom: 90px;
-    font-size: 30px;
+    margin-bottom: 70px;
+    font-size: 25px;
     line-height: 1.7;
 
     @include max-screen($breakpoint-mobile) {
@@ -415,7 +438,7 @@
   }
   p {
     margin-top: 60px;
-    line-height: 2.9;
+    line-height: 2.7;
 
     @include max-screen($breakpoint-mobile) {
       font-size: 16px;
@@ -423,10 +446,10 @@
     }
   }
   img {
-    width: 689px;
-    height: 444px;
+    width: 520px;
+    height: auto;
     position: absolute;
-    top: 185px;
+    top: 120px;
     left: 170px;
 
     @include max-screen($breakpoint-mobile) {

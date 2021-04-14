@@ -149,7 +149,7 @@
 			</ul>
 		</div>
 	</section>
-	<section class="l-index__notice u-bg-fill" style="background-image: url(<?php echo $domainPath; ?>public/images/index/notice-2.png); margin-bottom: 150px;">
+	<section class="l-index__notice u-bg-fill" style="background-image: url(<?php echo $domainPath; ?>public/images/index/notice-2.png);">
 		<div class="u-flex u-flex--center js-scroll-activate">
 			<h2>超有名タレント、<br class="u-show-sp">著名人続々登録！</h2>
 			<p>事前登録1,000人突破</p>

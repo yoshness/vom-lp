@@ -1,9 +1,30 @@
 .l-confirm {
+  position: relative;
   padding-top: 200px;
   text-align: center;
 
   @include max-screen($breakpoint-mobile) {
     padding-top: 120px;
+  }
+
+  &:before {
+    width: 872px;
+    height: 1419px;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    content: '';
+    background-image: url('./images/confirm-decor.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 172px;
+      height: 224px;
+      right: 0;
+      background-image: url('./images/confirm-decor-sp.png');
+    }
   }
 
   .section-title {
@@ -50,7 +71,7 @@
 .l-confirm__row {
   width: 1000px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 45px 0;
   text-align: left;
   border-top: 1px solid #707070;
 
@@ -66,8 +87,8 @@
 
   label {
     display: block;
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 15px;
+    font-size: 18px;
     font-weight: 500;
 
     @include max-screen($breakpoint-mobile) {
@@ -76,7 +97,7 @@
   }
   input {
     width: 100%;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     pointer-events: none;
 

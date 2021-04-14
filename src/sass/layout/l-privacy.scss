@@ -1,9 +1,30 @@
 .l-privacy {
+  position: relative;
   padding: 200px 0 120px;
   text-align: center;
 
   @include max-screen($breakpoint-mobile) {
     padding: 120px 0 50px;
+  }
+
+  &:before {
+    width: 872px;
+    height: 1419px;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    content: '';
+    background-image: url('./images/confirm-decor.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 172px;
+      height: 224px;
+      right: 0;
+      background-image: url('./images/confirm-decor-sp.png');
+    }
   }
 
   .section-title {

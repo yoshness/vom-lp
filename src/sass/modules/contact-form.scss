@@ -12,7 +12,7 @@
   }
 }
 .contact-form__row {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   text-align: left;
 
   @include max-screen($breakpoint-mobile) {
@@ -21,8 +21,8 @@
 
   label {
     display: inline-block;
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 18px;
+    font-size: 18px;
     font-weight: 600;
 
     @include max-screen($breakpoint-mobile) {
@@ -33,7 +33,7 @@
     &[type='text'],
     &[type='email'] {
       width: 100%;
-      padding: 28px 35px;
+      padding: 25px 30px;
       border-radius: 10px;
       background-color: #191919;
 
@@ -60,10 +60,10 @@
   label {
     &:after {
       display: inline-block;
-      width: 70px;
-      height: 26px;
+      width: 65px;
+      height: 24px;
       margin-left: 30px;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 2;
       content: '必須';
       text-align: center;
@@ -81,7 +81,7 @@
 }
 .contact-form__checkboxes {
   label {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 
     @include max-screen($breakpoint-mobile) {

@@ -19,7 +19,7 @@
 }
 
 .hero__title {
-  font-size: 110px;
+  font-size: 90px;
   font-weight: bold;
   line-height: 1.21;
 
@@ -32,8 +32,8 @@
     width: 85px;
     height: 97px;
     position: absolute;
-    top: 40%;
-    right: 3%;
+    top: 34%;
+    right: 10%;
     background-color: $color-primary;
 
     mask-size: contain;
@@ -57,7 +57,7 @@
 
 .hero__description {
   margin-top: 80px;
-  font-size: 28px;
+  font-size: 26px;
 
   @include max-screen($breakpoint-mobile) {
     font-size: 20px;
