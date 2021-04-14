@@ -1,5 +1,6 @@
 <main class="l-index" id="js-top">
-	<div class="hero u-flex u-flex--center">
+	<div class="hero u-flex u-flex--center" id="js-hero">
+		<div class="hero__overlay" id="js-hero-overlay"></div>
 		<div class="l-container">
 			<h1 class="hero__title" id="js-hero-title">
 				Special surprise that<br>

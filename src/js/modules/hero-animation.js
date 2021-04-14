@@ -40,6 +40,13 @@ export default function heroAnimation() {
 	}, 2500);
 
 	anime({
+        targets: '#js-hero-overlay',
+        height: [ '100%', 0 ],
+        easing: 'easeOutQuad',
+        duration: 600
+    });
+
+	anime({
         targets: '#js-hero-description',
         opacity: [ 0, 1 ],
         translateY: [ -70, 0 ],
