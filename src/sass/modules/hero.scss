@@ -23,8 +23,9 @@
     width: 85px;
     height: 97px;
     position: absolute;
+    top: 40%;
+    right: 11%;
     background-color: $color-primary;
-    transform: translate(35px, 15px);
 
     mask-size: contain;
     mask-repeat: no-repeat;
@@ -33,7 +34,13 @@
     @include max-screen($breakpoint-mobile) {
       width: 60px;
       height: 72px;
-      transform: translate(35px, 150px);
+      top: auto;
+      bottom: 0;
+      left: auto;
+    }
+
+    &.is-moving {
+      animation: pop .4s 1 ease-in-out;
     }
   }
 }

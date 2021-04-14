@@ -1,11 +1,11 @@
-<main class="l-index">
+<main class="l-index" id="js-top">
 	<div class="hero u-flex u-flex--center">
 		<div class="l-container">
-			<h1 class="hero__title">
+			<h1 class="hero__title" id="js-hero-title">
 				Special surprise that<br>
 				Only you can do <i></i>
 			</h1>
-			<p class="hero__description">あなたにしか出来ない、<br class="u-show-sp">特別なサプライズを。</p>
+			<p class="hero__description" id="js-hero-description">あなたにしか出来ない、<br class="u-show-sp">特別なサプライズを。</p>
 		</div>
 	</div>
 	<section class="l-index__intro">

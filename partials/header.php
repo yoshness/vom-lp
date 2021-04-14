@@ -24,7 +24,7 @@
 	<body>
 		<header class="header">
 			<a href="<?php echo $domainPath; ?>">
-				<img src="<?php echo $domainPath; ?>public/images/logo.png" class="header__logo" width="102"></img>
+				<img src="<?php echo $domainPath; ?>public/images/logo.png" class="header__logo" width="102" id="js-logo"></img>
 			</a>
 		</header>
 
