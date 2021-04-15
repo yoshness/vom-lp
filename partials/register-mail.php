@@ -38,7 +38,9 @@
     $conf = ["valueInputOption" => "USER_ENTERED"];
     $ins = ["insertDataOption" => "INSERT_ROWS"];
 
-    $service->spreadsheets_values->append($spreadsheetId, $range, $valueRange, $conf, $ins);
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $service->spreadsheets_values->append($spreadsheetId, $range, $valueRange, $conf, $ins);
+    }
 
 	$subject_admin = "【VOM】お問い合わせがありました。";
 	$content_admin ="下記の内容でVOMより問い合わせがありました。\n折り返しの対応をお願いいたします。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n-----";
