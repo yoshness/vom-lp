@@ -3,3 +3,17 @@
     transform: translate(10px, -10px) scale(1.2);
   }
 }
+
+@keyframes scroll-down {
+  0% {
+    transform: rotate(45deg) translateX(-50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(45deg) translate(50%, 20px);
+    opacity: 0;
+  }
+}

@@ -8,6 +8,7 @@ import locker from './modules/locker';
 import formActions from './modules/form-actions';
 import heroAnimation from './modules/hero-animation';
 import scrollToElement from './modules/scroll-to-element';
+import congratulations from './modules/congratulations';
 
 scrollActivate();
 initParallax();
@@ -17,4 +18,8 @@ scrollToElement();
 
 if($('#js-top').length > 0) {
 	heroAnimation();
+}
+
+if($('#js-register-complete-page').length > 0) {
+	congratulations();
 }

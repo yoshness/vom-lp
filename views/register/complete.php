@@ -1,4 +1,4 @@
-<main class="l-complete">
+<main class="l-complete" id="js-register-complete-page">
 	<div class="l-container">
 		<h2 class="section-title">ARIGATO!!</h2>
 		<h3>事前登録が<br class="u-show-sp">完了しました！</h3>

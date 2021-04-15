@@ -28,7 +28,8 @@
 				<label for="">ご質問、ご要望等</label>
 				<input id="js-register-message" name="message">
 			</div>
-			<input type="submit" name="submit" value="入力内容確認" class="link-button">
+			<input type="hidden" name="referral" id="js-register-referral">
+			<input type="submit" name="submit" value="事前登録する" class="link-button">
 		</form>
 		<a href="<?php echo $domainPath; ?>" class="l-confirm__back">←入力画面に戻る</a>
 		<p class="l-confirm__notice">

@@ -6,6 +6,29 @@
 
   @include max-screen($breakpoint-mobile) {
     text-align: left;
+
+    &:before {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      font-size: 12px;
+      font-weight: bold;
+      content: 'SCROLL';
+      color: #fff;
+      transform: translateX(-50%);
+    }
+    &:after {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      bottom: -80px;
+      left: 50%;
+      content: '';
+      border-right: 5px solid #fff;
+      border-bottom: 5px solid #fff;
+      transform: translateX(-50%) rotate(45deg);
+      animation: scroll-down 1.5s infinite;
+    }
   }
 }
 
@@ -24,7 +47,7 @@
   line-height: 1.21;
 
   @include max-screen($breakpoint-mobile) {
-    font-size: 62px;
+    font-size: 60px;
   }
 
   i {
@@ -32,8 +55,9 @@
     width: 85px;
     height: 97px;
     position: absolute;
-    top: 34%;
-    right: 10%;
+    top: 50%;
+    right: 8%;
+    opacity: 0;
     background-color: $color-primary;
 
     mask-size: contain;
@@ -44,12 +68,13 @@
       width: 60px;
       height: 72px;
       top: auto;
-      right: 20%;
-      bottom: 0;
+      right: 15%;
+      bottom: -145px;
       left: auto;
     }
 
     &.is-moving {
+      opacity: 1;
       animation: pop .4s 1 ease-in-out;
     }
   }

@@ -2,7 +2,7 @@
 	<div class="l-container">
 		<h2 class="section-title">お問い合わせ</h2>
 		<p class="l-contact__message">こちらでは、サービスに関するご質問、資料請求、メディア・取材等の問い合わせ窓口を設置しております。<br>「日本を元気にする」私たちはこれに全てをかけて挑んでおります。皆様のお力が必要です。<br>業務提携やメディアとして発信いただける会社様は以下よりご連絡をお待ちしております。</p>
-		<img src="<?php echo $domainPath; ?>public/images/japan-flag.png"  class="l-contact__flag rellax" data-rellax-speed="-2">
+		<img src="<?php echo $domainPath; ?>public/images/japan-flag.png"  class="l-contact__flag rellax" data-rellax-speed="-2" data-rellax-xs-speed="-1">
 		<form action="" method="POST" class="contact-form" id="js-contact-form">
 			<div class="contact-form__row contact-form__row--required">
 				<label for="">会社名</label>
