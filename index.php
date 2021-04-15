@@ -34,9 +34,7 @@
         	require __DIR__ . '/views/privacy.php';
 	        break;
         default:
-	    	echo 'Page not found.';
-	        http_response_code(404);
-	        // require __DIR__ . '/views/404.php';
+	    	require __DIR__ . '/views/index.php';
 	        break;
     }
 

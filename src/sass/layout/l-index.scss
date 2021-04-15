@@ -28,7 +28,7 @@
 
 .l-index__intro {
   @include max-screen($breakpoint-mobile) {
-    padding-top: 100px;
+    padding-top: 200px;
   }
 
   .info-block__right {
@@ -81,6 +81,7 @@
 
     li {
       width: 31.5%;
+      position: relative;
 
       @include max-screen($breakpoint-mobile) {
         width: 100%;
@@ -88,17 +89,17 @@
       }
 
       &:first-child {
-        transform: translateY(50px);
+        top: 50px;
 
         @include max-screen($breakpoint-mobile) {
-          transform: none;
+          top: 0;
         }
       }
       &:last-child {
-        transform: translateY(-50px);
+        top: -50px;
 
         @include max-screen($breakpoint-mobile) {
-          transform: none;
+          top: 0;
         }
       }
     }
@@ -109,7 +110,7 @@
   padding: 300px 0 200px;
 
   @include max-screen($breakpoint-mobile) {
-    padding-bottom: 80px;
+    padding: 330px 0 80px;
   }
 
   .info-block__right {
@@ -127,7 +128,7 @@
         @include max-screen($breakpoint-mobile) {
           width: 149px;
           height: 128px;
-          top: 0;
+          top: 20px;
           left: 50vw;
         }
       }
@@ -151,7 +152,7 @@
         @include max-screen($breakpoint-mobile) {
           width: 183px;
           height: 157px;
-          top: 120px;
+          top: 100px;
           left: 40vw;
         }
       }
@@ -235,12 +236,21 @@
     font-weight: bold;
     color: #fff;
     border-radius: 10px;
-    background-color: $color-secondary;
+    background-image: linear-gradient(to left, $color-secondary, $color-secondary 50%, #fff 50%, #fff);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: background-position $duration $easing, color $duration $easing;
 
     @include max-screen($breakpoint-mobile) {
       width: 95%;
       padding: 25px 0;
       font-size: 20px;
+    }
+
+    &:hover {
+      color: $color-secondary;
+      background-position: 0 0;
+      background-size: 210% 100%;
     }
   }
 }
@@ -410,6 +420,12 @@
       }
     }
   }
+
+  .link-button {
+    @include max-screen($breakpoint-mobile) {
+      width: 100%;
+    }
+  }
 }
 
 .l-index__message {
@@ -432,6 +448,8 @@
     }
   }
   .section-title {
+    font-family: ヒラギノ明朝 Pro W6,YuMincho,游明朝,'Noto Serif JP',Times New Roman,Hiragino Mincho ProN,HGS明朝B,ＭＳ Ｐ明朝,serif,Meiryo,Sawarabi Mincho,メイリオ,ＭＳ Ｐゴシック,sans-serif;
+
     @include max-screen($breakpoint-mobile) {
       font-size: 34px;
     }

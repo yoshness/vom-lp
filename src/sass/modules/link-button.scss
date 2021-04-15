@@ -15,7 +15,7 @@
   transition: background-position $duration $easing, color $duration $easing;
 
   @include max-screen($breakpoint-mobile) {
-    width: 100%;;
+    width: 75%;
   }
 
   &:hover {

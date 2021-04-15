@@ -14,5 +14,15 @@
     @include max-screen($breakpoint-mobile) {
       font-size: 10px;
     }
+
+    a {
+      text-decoration: underline;
+      color: #fff;
+      transition: color $duration $easing;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
   }
 }

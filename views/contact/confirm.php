@@ -28,7 +28,7 @@
 				<label for="">備考</label>
 				<input id="js-contact-message" name="message">
 			</div>
-			<input type="submit" name="submit" value="入力内容確認" class="link-button">
+			<input type="submit" name="submit" value="送信する" class="link-button">
 		</form>
 		<a href="<?php echo $domainPath; ?>" class="l-confirm__back">←入力画面に戻る</a>
 	</div>

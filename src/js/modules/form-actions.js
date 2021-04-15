@@ -20,9 +20,28 @@ export default function formActions() {
 	    return indexed_array;
 	}
 
+	let getUrlParameter = function getUrlParameter(sParam) {
+	    let sPageURL = window.location.search.substring(1),
+	        sURLVariables = sPageURL.split('&'),
+	        sParameterName,
+	        i;
+
+	    for (i = 0; i < sURLVariables.length; i++) {
+	        sParameterName = sURLVariables[i].split('=');
+
+	        if (sParameterName[0] === sParam) {
+	            return typeof sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+	        }
+	    }
+	    return false;
+	};
+
 	$('#js-register-confirm').on('click', (e) => {
 		let data = getFormData($('#js-register-form'));
 		localStorage.setItem('registerData', JSON.stringify(data));
+
+		let referral = getUrlParameter('referral') ? getUrlParameter('referral') : 'None';
+		localStorage.setItem('referral', referral);
 	});
 
 	if($('#js-register-confirm-page').length > 0) {
@@ -38,6 +57,7 @@ export default function formActions() {
 		);
 		$('#js-register-office').val(retrievedObject.office);
 		$('#js-register-message').val(retrievedObject.message);
+		$('#js-register-referral').val(localStorage.getItem('referral'));
 	}
 
 	$('#js-contact-confirm').on('click', (e) => {

@@ -4,44 +4,44 @@
 		<div class="l-container">
 			<h1 class="hero__title" id="js-hero-title">
 				Special surprise that<br>
-				Only you can do <i></i>
+				Only you can do <i id="js-hero-confetti"></i>
 			</h1>
 			<p class="hero__description" id="js-hero-description">あなたにしか出来ない、<br class="u-show-sp">特別なサプライズを。</p>
 		</div>
 	</div>
 	<section class="l-index__intro">
 		<div class="l-container u-flex u-flex--center info-block js-scroll-activate">
-			<div class="info-block__left">
+			<div class="info-block__left js-scroll-activate-item">
 				<h2>VOMって<br>どんなサービス？</h2>
 				<p>
-					VOMは、<em>ファンと著名人による日本最大級の動画メッセージプラットフォームです。</em>
+					VOMは、<em>ファンと著名人による日本最大級の動画メッセージプラットフォーム</em>です。
 					ユーザーは目的に応じて好きな著名人に動画メッセージリクエストの送信が可能、
 					著名人は複数のリクエストからプレゼントしたいテーマを自ら選定し、自撮り動画を作成。
 					作成された世界にひとつだけの動画はユーザーに送られ、感動体験と勇気を与えます。
 				VOMは、エンタメパワーを最大化し、日本を元気にすると確信しています。
 				</p>
 			</div>
-			<div class="info-block__right">
-				<img src="<?php echo $domainPath; ?>public/images/index/intro-1.png" class="rellax" data-rellax-speed="1">
-				<img src="<?php echo $domainPath; ?>public/images/index/intro-2.png" class="rellax" data-rellax-speed="3">
+			<div class="info-block__right js-scroll-activate-item" data-delay="400">
+				<img src="<?php echo $domainPath; ?>public/images/index/intro-1.png" class="rellax" data-rellax-speed="1" data-rellax-xs-speed=".5">
+				<img src="<?php echo $domainPath; ?>public/images/index/intro-2.png" class="rellax" data-rellax-speed="3" data-rellax-xs-speed="1.5">
 			</div>
 		</div>
 	</section>
 	<section class="l-index__function">
 		<div class="l-container u-flex js-scroll-activate">
-			<h2 class="section-title">VOMは<br class="u-show-sp">何ができるの？</h2>
+			<h2 class="section-title js-scroll-activate-item">VOMは<br class="u-show-sp">何ができるの？</h2>
 			<ul class="u-flex u-flex--center">
-				<li class="description-block">
+				<li class="description-block js-scroll-activate-item">
 					<img src="<?php echo $domainPath; ?>public/images/index/function-1.png" alt="">
 					<h3>ファンへ直接動画を送る事ができる</h3>
 					<p>1対Nの時代から、1対1の時代へ。新時代における直接的なファンとの交流は高いエンゲージメントを獲得し、より濃いファン化を促進します。</p>
 				</li>
-				<li class="description-block">
+				<li class="description-block js-scroll-activate-item" data-delay="300">
 					<img src="<?php echo $domainPath; ?>public/images/index/function-2.png" alt="">
 					<h3>可処分時間で収益を上げられる</h3>
 					<p>あなたの30秒〜60秒が短時間で収益に変わります。リクエストを受け取り、対応した総額の70%が配信者側に支払われます。機材も必要なく素のあなたである事が大切です。</p>
 				</li>
-				<li class="description-block">
+				<li class="description-block js-scroll-activate-item" data-delay="600">
 					<img src="<?php echo $domainPath; ?>public/images/index/function-3.png" alt="">
 					<h3>人々へ勇気と元気、感動を与える</h3>
 					<p>コロナ禍により会うことが難しくなった今、ユーザーはあなたからのメッセージを待ち望んでいます。あなたの一言でユーザーの人生は大きく変わります。</p>
@@ -51,56 +51,56 @@
 	</section>
 	<section class="l-index__use">
 		<div class="l-container u-flex u-flex--center info-block info-block--reverse  js-scroll-activate">
-			<div class="info-block__left">
+			<div class="info-block__left js-scroll-activate-item">
 				<h2>利用シーン</h2>
 				<p> 
 					ユーザーの希望は様々です。「子供が小学校に入学したのでお祝いメッセージを欲しい」「息子が勉強しないので、叱って欲しい」「友達の結婚式でサプライズプレゼントしたい」「彼氏に振られたので慰めて欲しい」「闘病中の母に応援コメントをもらいたい」など、皆さんが思っている以上にファンは多くの不安、痛みを抱えています。<br><em>ファンは、ずっとあなたのメッセージを待っています。</em>
 				</p>
 			</div>
-			<div class="info-block__right">
-				<img src="<?php echo $domainPath; ?>public/images/index/use-1.png" class="rellax" data-rellax-speed="1">
-				<img src="<?php echo $domainPath; ?>public/images/index/use-2.png" class="rellax" data-rellax-speed="2">
-				<img src="<?php echo $domainPath; ?>public/images/index/use-3.png" class="rellax" data-rellax-speed="3">
+			<div class="info-block__right js-scroll-activate-item" data-delay="400">
+				<img src="<?php echo $domainPath; ?>public/images/index/use-1.png" class="rellax" data-rellax-speed="1" data-rellax-xs-speed=".5">
+				<img src="<?php echo $domainPath; ?>public/images/index/use-2.png" class="rellax" data-rellax-speed="2" data-rellax-xs-speed="1">
+				<img src="<?php echo $domainPath; ?>public/images/index/use-3.png" class="rellax" data-rellax-speed="3" data-rellax-xs-speed="1.5">
 			</div>
 		</div>
 	</section> 
 	<section class="l-index__notice u-bg-fill" style="background-image: url(<?php echo $domainPath; ?>public/images/index/notice-1.jpg);">
 		<div class="u-flex u-flex--center js-scroll-activate">
-			<h2>超有名タレント、<br class="u-show-sp">著名人続々登録！</h2>
-			<p>事前登録1,000人突破</p>
-			<a href="#js-register-wrapper" class="u-flex u-flex--center js-scroll">事前登録する</a>
+			<h2 class=" js-scroll-activate-item">超有名タレント、<br class="u-show-sp">著名人続々登録！</h2>
+			<p class=" js-scroll-activate-item">事前登録1,000人突破</p>
+			<a href="#js-register-wrapper" class="u-flex u-flex--center js-scroll js-scroll-activate-item">事前登録する</a>
 		</div>
 	</section>
 	<section class="l-index__overseas">
 		<div class="l-container u-flex u-flex--center info-block js-scroll-activate">
-			<div class="info-block__left">
+			<div class="info-block__left js-scroll-activate-item">
 				<h2>海外で急成長中</h2>
 				<i></i>
 				<p>
-					エンターテイメントの聖地、アメリカでは巣篭もり需要に合わせて<br>
-					メイウェザー、マイク・タイソンなど超大物からハリウッド俳優、政治家<br>
-					モデル、タレント、コメディアンなど15,000人<em>以上が登録し、ユーザーの</em>求める声に<br>
+					エンターテイメントの聖地、アメリカでは巣篭もり需要に合わせて<br class="u-show-pc">
+					メイウェザー、マイク・タイソンなど超大物からハリウッド俳優、政治家、<br class="u-show-pc">
+					モデル、タレント、コメディアンなど<em>15,000人以上が登録し</em>、ユーザーの求める声に<br class="u-show-pc">
 					応える新たなファンビジネスが構築されています。
 				</p>
 			</div>
-			<div class="info-block__right">
-				<img src="<?php echo $domainPath; ?>public/images/index/overseas-1.png" class="rellax" data-rellax-speed="1">
-				<img src="<?php echo $domainPath; ?>public/images/index/overseas-2.png" class="rellax" data-rellax-speed="3">
+			<div class="info-block__right js-scroll-activate-item" data-delay="400">
+				<img src="<?php echo $domainPath; ?>public/images/index/overseas-1.png" class="rellax" data-rellax-speed="1" data-rellax-xs-speed=".5">
+				<img src="<?php echo $domainPath; ?>public/images/index/overseas-2.png" class="rellax" data-rellax-speed="3" data-rellax-xs-speed="1.5">
 			</div>
 		</div>
 	</section>
 	<section class="l-index__monetize">
 		<div class="l-container u-flex u-flex--center info-block info-block--reverse js-scroll-activate">
-			<div class="info-block__left">
+			<div class="info-block__left js-scroll-activate-item">
 				<h2>可処分時間を収益化</h2>
 				<p> 
 					VOMは、自分自身にファンが付いている方であれば、全ての人が利用可能。<br>
 					ファンにとって、あなたは元気の源、生きる糧となっていることも少なくありません。<br>
-					アメリカではミドルレイヤーの方が同様のサービスを利用し、月700万の収<em>益を手に入れてい</em>ます。求める人も、撮影する側も幸せになる。<br>
+					アメリカではミドルレイヤーの方が同様のサービスを利用し、<em>月700万の収益</em>を手に入れています。求める人も、撮影する側も幸せになる。<br>
 					場所や時間に囚われず、ありのままのファンサービス、これこそがVOMの魅力です。
 				</p>
 			</div>
-			<div class="info-block__right">
+			<div class="info-block__right js-scroll-activate-item" data-delay="400">
 				<img src="<?php echo $domainPath; ?>public/images/index/monetize-1.png" class="rellax" data-rellax-speed="2">
 				<img src="<?php echo $domainPath; ?>public/images/index/monetize-2.png">
 				<p class="l-index__monetize-note">※上記は参考例になります。リクエストが多く、対応する回数が増えるほど、収益が高まります。<br>※ユーザーは費用を支払い、動画受け渡し後に依頼額の70%が撮影者の収益となり、<br>30%がプラットフォーム上の手数料になります。</p>
@@ -109,8 +109,8 @@
 	</section> 
 	<section class="l-index__faq">
 		<div class="l-container js-scroll-activate">
-			<h2 class="section-title">よくある質問</h2>
-			<ul>
+			<h2 class="section-title js-scroll-activate-item">よくある質問</h2>
+			<ul class="js-scroll-activate-item">
 				<li>
 					<div class="faq-block js-toggle-slide is-active">
 						<label for="">Q1</label>
@@ -151,40 +151,40 @@
 	</section>
 	<section class="l-index__notice u-bg-fill" style="background-image: url(<?php echo $domainPath; ?>public/images/index/notice-2.png);">
 		<div class="u-flex u-flex--center js-scroll-activate">
-			<h2>超有名タレント、<br class="u-show-sp">著名人続々登録！</h2>
-			<p>事前登録1,000人突破</p>
-			<a href="#js-register-wrapper" class="u-flex u-flex--center js-scroll">事前登録する</a>
+			<h2 class="js-scroll-activate-item">超有名タレント、<br class="u-show-sp">著名人続々登録！</h2>
+			<p class="js-scroll-activate-item">事前登録1,000人突破</p>
+			<a href="#js-register-wrapper" class="u-flex u-flex--center js-scroll js-scroll-activate-item">事前登録する</a>
 		</div>
 	</section>
 	<section class="l-index__target">
 		<div class="l-container u-flex u-flex--center info-block js-scroll-activate">
-			<div class="info-block__left">
+			<div class="info-block__left js-scroll-activate-item">
 				<h2>事務所所属の皆様へ</h2>
 				<p> 
-					所属されている場合でも、事前<em>登録自体は問題ございません。（仮登録のため）</em><br>
+					所属されている場合でも、<em>事前登録自体は問題ございません。（仮登録のため）</em><br>
 					また実際に本サービスを用いて収益化をする場合は、事務所様との業務提携（協力）する体制なども整っておりますため、一度マネージャー様や上層部の方に以下リンク資料を共有の上、ご紹介いただけると幸いです。<br>
 					（実際に本サービスを著名人の方が知り、事務所につないでいただき、既に弊社とプロダクション様の業務提携も実施・増加しております）
 				</p>
-				<a href="#" class="link-button link-button--rounded">サービス概要資料について</a>
+				<a href="<?php echo $domainPath; ?>contact" class="link-button link-button--rounded">サービス概要資料について</a>
 			</div>
-			<div class="info-block__right">
-				<img src="<?php echo $domainPath; ?>public/images/index/target-1.png"  class="rellax" data-rellax-speed="1">
-				<img src="<?php echo $domainPath; ?>public/images/index/target-2.png"  class="rellax" data-rellax-speed="2">
+			<div class="info-block__right js-scroll-activate-item" data-delay="400">
+				<img src="<?php echo $domainPath; ?>public/images/index/target-1.png"  class="rellax" data-rellax-speed="1" data-rellax-xs-speed=".5">
+				<img src="<?php echo $domainPath; ?>public/images/index/target-2.png"  class="rellax" data-rellax-speed="2" data-rellax-xs-speed="1">
 			</div>
 		</div>
 	</section>
 	<section class="l-index__message">
 		<div class="l-container js-scroll-activate">
-			<h3>サービスにかける想い</h3>
-			<h2 class="section-title">日本中を本気で元気に<br>そして勇気を感動を。</h2>
-			<p>私には父との記憶がほとんどありません。父が仕事人間で家にいませんでした。<br>父は私が17歳の頃にガンで亡くなりました。父の葬式には5階建てのビルが全フロア埋まるほどの参列者がいました。<br>父は何をしている人なのか。私はその時初めて「時価総額1兆円を超える会社の北海道支社長」という<br>想像をはるかに超える偉大さを知りました。父から教わることはないと思いましたが、父の葬儀は、父の集大成であり<br>父が世の中に与え続けた、貢献し続けた結果なんだ、と強く実感しました。父は死をもって背中で教えてくれました。<br>現在、日本そして、世界はコロナ禍によって活力を失い、元気を失っています。<br>今こそエンタメの本質が問われています。日本を元気にするには、ファン一人一人を元気にする他ありません。<br>このサービスを通して、著名人からファン一人一人にメッセージを送ることが、日本を元気にすると確信しています。<br>どうか、事務所の皆様、ファンが付いている著名人の皆様、お力をお貸しください。</p>
+			<h3 class="js-scroll-activate-item">サービスにかける想い</h3>
+			<h2 class="section-title js-scroll-activate-item" data-delay="400">日本中を本気で元気に<br>そして勇気を感動を。</h2>
+			<p class="js-scroll-activate-item" data-delay="400">私には父との記憶がほとんどありません。父が仕事人間で家にいませんでした。<br>父は私が17歳の頃にガンで亡くなりました。父の葬式には5階建てのビルが全フロア埋まるほどの参列者がいました。<br>父は何をしている人なのか。私はその時初めて「時価総額1兆円を超える会社の北海道支社長」という<br class="u-show-pc">想像をはるかに超える偉大さを知りました。父から教わることはないと思いましたが、父の葬儀は、父の集大成であり<br class="u-show-pc">父が世の中に与え続けた、貢献し続けた結果なんだ、と強く実感しました。父は死をもって背中で教えてくれました。<br>現在、日本そして、世界はコロナ禍によって活力を失い、元気を失っています。<br>今こそエンタメの本質が問われています。日本を元気にするには、ファン一人一人を元気にする他ありません。<br>このサービスを通して、著名人からファン一人一人にメッセージを送ることが、日本を元気にすると確信しています。<br>どうか、事務所の皆様、ファンが付いている著名人の皆様、お力をお貸しください。</p>
 		</div>
-		<img src="<?php echo $domainPath; ?>public/images/japan-flag.png"  class="rellax" data-rellax-speed="2">
+		<img src="<?php echo $domainPath; ?>public/images/japan-flag.png"  class="rellax" data-rellax-speed="2" data-rellax-xs-speed="1">
 	</section>
 	<section class="l-contact" id="js-register-wrapper">
 		<div class="l-container js-scroll-activate">
-			<h2 class="section-title">事前登録フォーム</h2>
-			<form action="" method="POST" class="contact-form" id="js-register-form">
+			<h2 class="section-title js-scroll-activate-item">事前登録フォーム</h2>
+			<form action="" method="POST" class="contact-form js-scroll-activate-item" id="js-register-form">
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">活動名、芸名</label>
 					<input type="text" placeholder="例）タケル  ジョンソン" name="stage_name">
@@ -226,9 +226,9 @@
 					<label for="">SNS情報（最低1つご記入ください）</label>
 					<div class="contact-form__sns custom-checkboxes u-flex u-flex--center">
 						<input id="sns_1" name="sns_1" value="Twitter" type="checkbox"><label for="sns_1">Twitter</label>
-						<input type="text" placeholder="例）@takeru_jon011" name="sns_twitter">
+						<input type="text" placeholder="例）@takeru_jn" name="sns_twitter">
 						<input id="sns_2" name="sns_2" value="Instagram" type="checkbox"><label for="sns_2">Instagram</label>
-						<input type="text" placeholder="例）takeru_jon011" name="sns_instagram">
+						<input type="text" placeholder="例）takeru_jn" name="sns_instagram">
 						<input id="sns_3" name="sns_3" value="Youtube" type="checkbox"><label for="sns_3">Youtube</label>
 						<input type="text" placeholder="例）「ジョンくん」、URL" name="sns_youtube">
 						<input id="sns_4" name="sns_4" value="その他" type="checkbox"><label for="sns_4">その他</label>
@@ -248,7 +248,7 @@
 					<textarea name="message" rows="8" placeholder="例）事務所の人とつなぎたいのですが、どうすれば良いでしょうか？"></textarea>
 				</div>
 				<div class="contact-form__terms">
-					<p>当社<a href="<?php echo $domainPath; ?>privacy">の個人情報保護方針</a>について、<br>ご同意の上、確認画面へお進みくださいませ。</p>
+					<p>当社の<a href="<?php echo $domainPath; ?>privacy">個人情報保護方針</a>について、<br>ご同意の上、確認画面へお進みくださいませ。</p>
 					<div class="contact-form__checkboxes custom-checkboxes">
 						<input id="agree" name="agree" value="同意する" type="checkbox"><label for="agree">同意する</label>
 					</div>
