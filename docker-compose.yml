@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  php:
+    tty: true
+    image: bitnami/php-fpm:7.4
+    ports:
+      - 9000:9000
+    volumes:
+      - .:/app/vom-lp
+    networks:
+      - app-tier
+
+  nginx:
+    image: bitnami/nginx:latest
+    depends_on:
+      - php
+    networks:
+      - app-tier
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./docker/nginx/server.conf:/opt/bitnami/nginx/conf/server_blocks/vom-lp.conf
+
+networks:
+  app-tier:
+    driver: bridge
