@@ -2,7 +2,6 @@
 	$domainPath = '/vom-lp/';
 	include 'partials/header.php';
 
-	$request = $_SERVER['REQUEST_URI'];
 	switch ($request) {
 	    case '/vom-lp/':
         	require __DIR__ . '/views/index.php';

@@ -68,7 +68,7 @@
 		<div class="u-flex u-flex--center js-scroll-activate">
 			<h2>超有名タレント、<br class="u-show-sp">著名人続々登録！</h2>
 			<p>事前登録1,000人突破</p>
-			<a href="#" class="u-flex u-flex--center">事前登録する</a>
+			<a href="#js-register-wrapper" class="u-flex u-flex--center js-scroll">事前登録する</a>
 		</div>
 	</section>
 	<section class="l-index__overseas">
@@ -122,28 +122,28 @@
 					<div class="faq-block js-toggle-slide">
 						<label for="">Q2</label>
 						<h3 class="faq-block__title">費用はどのように決めますか？</h3>
-						<p class="faq-block__description js-toggle-target">事前登録申請はどなたでも可能です。サービスリリース時点でVOM独自審査基準により利用が制限される場合もありますが、私たちが大切にしているのは皆様のファンの方々を元気にする”場”を提供することです。<br>フォロワーが数千、数万、多い、少ない関係なく、ファンはあなたからのメッセージを待っています。共に日本を元気にしましょう。</p>
+						<p class="faq-block__description js-toggle-target">単価についてはご自身で設定いただきます。金額についてはざまざまですが、フォロワー数から平均的に受け入れられやすい金額帯を設定時に記載しておりますので、金額に迷いがある方がそちらに合わせていただく方が良いかもしれません。</p>
 					</div>
 				</li>
 				<li>
 					<div class="faq-block js-toggle-slide">
 						<label for="">Q3</label>
 						<h3 class="faq-block__title">事務所に所属していますが、登録して問題ないでしょうか？</h3>
-						<p class="faq-block__description js-toggle-target">事前登録申請はどなたでも可能です。サービスリリース時点でVOM独自審査基準により利用が制限される場合もありますが、私たちが大切にしているのは皆様のファンの方々を元気にする”場”を提供することです。<br>フォロワーが数千、数万、多い、少ない関係なく、ファンはあなたからのメッセージを待っています。共に日本を元気にしましょう。</p>
+						<p class="faq-block__description js-toggle-target">事前登録であれば問題ございません。サービスリリース後には実際にユーザーから課金が行われるため、事務所間での取り決め等で事務所を通す必要がある場合は、VOM×事務所様の業務提携も行なっておりますので、事務所様へ一度ご確認いただけますと幸いです。</p>
 					</div>
 				</li>
 				<li>
 					<div class="faq-block js-toggle-slide">
 						<label for="">Q4</label>
 						<h3 class="faq-block__title">売上はいつ振り込まれますか？</h3>
-						<p class="faq-block__description js-toggle-target">事前登録申請はどなたでも可能です。サービスリリース時点でVOM独自審査基準により利用が制限される場合もありますが、私たちが大切にしているのは皆様のファンの方々を元気にする”場”を提供することです。<br>フォロワーが数千、数万、多い、少ない関係なく、ファンはあなたからのメッセージを待っています。共に日本を元気にしましょう。</p>
+						<p class="faq-block__description js-toggle-target">月末締め、翌月末払いとなります。リリース時点でのオプションは想定しておりませんが、支払いサイト（タイミング）を分けたい、まとめたいなどのご要望があれば随時実装していく想定でございます。</p>
 					</div>
 				</li>
 				<li>
 					<div class="faq-block js-toggle-slide">
 						<label for="">Q5</label>
 						<h3 class="faq-block__title">利用の流れを教えてください。</h3>
-						<p class="faq-block__description js-toggle-target">事前登録申請はどなたでも可能です。サービスリリース時点でVOM独自審査基準により利用が制限される場合もありますが、私たちが大切にしているのは皆様のファンの方々を元気にする”場”を提供することです。<br>フォロワーが数千、数万、多い、少ない関係なく、ファンはあなたからのメッセージを待っています。共に日本を元気にしましょう。</p>
+						<p class="faq-block__description js-toggle-target">事前登録後の返信メールにも記載しておりますが、基本的にはリリースが近くなるまでお待ちいただく形となります。リリースが近づきましたら、改めてメールにて流れをお送りさせていただきます。</p>
 					</div>
 				</li>
 			</ul>
@@ -153,7 +153,7 @@
 		<div class="u-flex u-flex--center js-scroll-activate">
 			<h2>超有名タレント、<br class="u-show-sp">著名人続々登録！</h2>
 			<p>事前登録1,000人突破</p>
-			<a href="#" class="u-flex u-flex--center">事前登録する</a>
+			<a href="#js-register-wrapper" class="u-flex u-flex--center js-scroll">事前登録する</a>
 		</div>
 	</section>
 	<section class="l-index__target">
@@ -181,7 +181,7 @@
 		</div>
 		<img src="<?php echo $domainPath; ?>public/images/japan-flag.png"  class="rellax" data-rellax-speed="2">
 	</section>
-	<section class="l-contact">
+	<section class="l-contact" id="js-register-wrapper">
 		<div class="l-container js-scroll-activate">
 			<h2 class="section-title">事前登録フォーム</h2>
 			<form action="" method="POST" class="contact-form" id="js-register-form">
