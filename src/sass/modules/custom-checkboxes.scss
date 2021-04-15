@@ -32,11 +32,12 @@
     }
     &:after {
       display: none;
-      width: 24px;
-      height: 24px;
+      width: 16px;
+      height: 18px;
       position: absolute;
-      top: 0;
-      left: 1px;
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
       margin-left: 0;
       content: '';
       background: url('./images/checkmark.png');
