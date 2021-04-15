@@ -203,6 +203,22 @@
 						<input id="category_1" name="category" value="女優" type="checkbox"><label for="category_1">女優</label>
 						<input id="category_2" name="category" value="俳優" type="checkbox"><label for="category_2">俳優</label>
 						<input id="category_3" name="category" value="芸人" type="checkbox"><label for="category_3">芸人</label>
+						<input id="category_4" name="category" value="アーティスト" type="checkbox"><label for="category_4">アーティスト</label>
+						<input id="category_5" name="category" value="ユーチューバー" type="checkbox"><label for="category_5">ユーチューバー</label>
+						<input id="category_6" name="category" value="ライバー" type="checkbox"><label for="category_6">ライバー</label>
+						<input id="category_7" name="category" value="アスリート" type="checkbox"><label for="category_7">アスリート</label>
+						<input id="category_8" name="category" value="モデル" type="checkbox"><label for="category_8">モデル</label>
+						<input id="category_9" name="category" value="起業家" type="checkbox"><label for="category_9">起業家</label>
+						<input id="category_10" name="category" value="政治家" type="checkbox"><label for="category_10">政治家</label>
+						<input id="category_11" name="category" value="タレント" type="checkbox"><label for="category_11">タレント</label>
+						<input id="category_12" name="category" value="グラビアアイドル" type="checkbox"><label for="category_12">グラビアアイドル</label>
+						<input id="category_13" name="category" value="インフルエンサー" type="checkbox"><label for="category_13">インフルエンサー</label>
+						<input id="category_14" name="category" value="DJ" type="checkbox"><label for="category_14">DJ</label>
+						<input id="category_15" name="category" value="格闘家" type="checkbox"><label for="category_15">格闘家</label>
+						<input id="category_16" name="category" value="美容家" type="checkbox"><label for="category_16">美容家</label>
+						<input id="category_17" name="category" value="アナウンサー" type="checkbox"><label for="category_17">アナウンサー</label>
+						<input id="category_18" name="category" value="プロデューサー" type="checkbox"><label for="category_18">プロデューサー</label>
+						<input id="category_19" name="category" value="その他" type="checkbox"><label for="category_19">その他</label>
 					</div>
 					<input type="text" placeholder="例）その他の場合は、ご記入ください。">
 				</div>
