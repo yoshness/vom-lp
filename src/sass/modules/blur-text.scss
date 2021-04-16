@@ -1,0 +1,23 @@
+.blur-text__letter {
+  display: inline-block;
+  opacity: 0;
+  transition: all 2s cubic-bezier(.165, .84, .44, 1) 0s;
+  transform: translateY(2rem);
+
+          filter: blur(10px);
+  -webkit-filter: blur(10px);
+
+  .blur-text.is-shown & {
+    opacity: 1;
+    transform: translateY(0);
+    // hack so it will work on Chrome
+
+    -webkit-filter: blur(.01em);
+            filter: blur(.01em);
+
+    body.is-iOS & {
+      -webkit-filter: blur(0);
+              filter: blur(0);
+    }
+  }
+}

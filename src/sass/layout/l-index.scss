@@ -38,9 +38,9 @@
 
     img {
       &:first-of-type {
-        width: 500px;
+        width: 450px;
         z-index: 1;
-        top: 300px;
+        top: 250px;
 
         @include max-screen($breakpoint-mobile) {
           width: 269px;
@@ -50,8 +50,8 @@
       }
       &:last-of-type {
         width: 250px;
-        top: -120px;
-        left: 15vw;
+        top: -100px;
+        left: 20vw;
 
         @include max-screen($breakpoint-mobile) {
           width: 134px;
@@ -80,7 +80,7 @@
     }
 
     li {
-      width: 31.5%;
+      width: 31%;
       position: relative;
 
       @include max-screen($breakpoint-mobile) {
@@ -89,14 +89,14 @@
       }
 
       &:first-child {
-        top: 50px;
+        top: 25px;
 
         @include max-screen($breakpoint-mobile) {
           top: 0;
         }
       }
       &:last-child {
-        top: -50px;
+        top: -25px;
 
         @include max-screen($breakpoint-mobile) {
           top: 0;
@@ -107,7 +107,7 @@
 }
 
 .l-index__use {
-  padding: 300px 0 200px;
+  padding: 200px 0 250px;
 
   @include max-screen($breakpoint-mobile) {
     padding: 330px 0 80px;
@@ -121,9 +121,9 @@
 
     img {
       &:first-of-type {
-        width: 235px;
+        width: 215px;
         top: -60px;
-        left: 170px;
+        left: 200px;
 
         @include max-screen($breakpoint-mobile) {
           width: 149px;
@@ -133,9 +133,9 @@
         }
       }
       &:nth-of-type(2) {
-        width: 225px;
+        width: 190px;
         top: 140px;
-        left: -250px;
+        left: -150px;
 
         @include max-screen($breakpoint-mobile) {
           width: 154px;
@@ -145,9 +145,9 @@
         }
       }
       &:last-of-type {
-        width: 235px;
-        top: 90px;
-        left: 180px;
+        width: 210px;
+        top: 110px;
+        left: 230px;
 
         @include max-screen($breakpoint-mobile) {
           width: 183px;
@@ -163,7 +163,7 @@
 .l-index__notice {
   justify-content: center;
   position: relative;
-  padding: 85px 0;
+  padding: 75px 0;
   text-align: center;
 
   @include max-screen($breakpoint-mobile) {
@@ -229,13 +229,13 @@
   }
   a {
     justify-content: center;
-    width: 475px;
+    width: 420px;
     margin: 0 auto;
     padding: 30px 0;
-    font-size: 23px;
+    font-size: 22px;
     font-weight: bold;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 8px;
     background-image: linear-gradient(to left, $color-secondary, $color-secondary 50%, #fff 50%, #fff);
     background-position: 100% 0;
     background-size: 200% 100%;
@@ -265,11 +265,11 @@
   .info-block__left {
     i {
       display: inline-block;
-      width: 62px;
-      height: 69px;
+      width: 50px;
+      height: 57px;
       position: absolute;
-      top: 5px;
-      right: 0;
+      top: 8px;
+      right: 20px;
       background-color: $color-primary;
       transform: translateX(-11vw);
 
@@ -289,8 +289,7 @@
   .info-block__right {
     img {
       &:first-of-type {
-        width: 361px;
-        height: 282px;
+        width: 290px;
         top: 0;
 
         @include max-screen($breakpoint-mobile) {
@@ -301,9 +300,10 @@
         }
       }
       &:last-of-type {
-        width: 623px;
+        width: 530px;
         height: auto;
-        top: 0;
+        top: 20px;
+        left: -10px;
 
         @include max-screen($breakpoint-mobile) {
           width: 360px;
@@ -325,8 +325,7 @@
   .info-block__right {
     img {
       &:first-of-type {
-        width: 275px;
-        height: 570px;
+        width: 250px;
         top: 100px;
         left: 220px;
 
@@ -336,14 +335,16 @@
           left: 20vw;
         }
       }
+      &:nth-of-type(2) {
+        width: 740px;
+        top: -250px;
+      }
       &:last-of-type {
-        width: 650px;
-        top: -350px;
-
         @include max-screen($breakpoint-mobile) {
-          width: 100%;
-          top: -230px;
-          left: 0;
+          width: 93.7%;
+          top: -260px;
+          left: 50%;
+          transform: translateX(-50%);
         }
       }
     }
@@ -352,8 +353,10 @@
 
 .l-index__monetize-note {
   position: absolute;
-  bottom: 250px;
+  bottom: 180px;
+  left: 60px;
   font-size: 10px;
+  line-height: 2.2;
 
   @include max-screen($breakpoint-mobile) {
     bottom: 100px;
@@ -370,7 +373,7 @@
   }
 
   h2 {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 
     @include max-screen($breakpoint-mobile) {
       margin-bottom: 40px;
@@ -378,7 +381,7 @@
   }
 
   ul {
-    width: 1000px;
+    width: 800px;
     margin: 0 auto;
 
     @include max-screen($breakpoint-mobile) {
@@ -407,9 +410,9 @@
         }
       }
       &:last-of-type {
-        width: 350px;
-        top: -80px;
-        left: 150px;
+        width: 325px;
+        top: -100px;
+        left: 190px;
 
         @include max-screen($breakpoint-mobile) {
           width: 223px;
@@ -438,8 +441,8 @@
   }
 
   h3 {
-    margin-bottom: 70px;
-    font-size: 25px;
+    margin-bottom: 50px;
+    font-size: 24px;
     line-height: 1.7;
 
     @include max-screen($breakpoint-mobile) {
@@ -448,14 +451,18 @@
     }
   }
   .section-title {
+    width: 600px;
+    margin: 0 auto;
     font-family: ヒラギノ明朝 Pro W6,YuMincho,游明朝,'Noto Serif JP',Times New Roman,Hiragino Mincho ProN,HGS明朝B,ＭＳ Ｐ明朝,serif,Meiryo,Sawarabi Mincho,メイリオ,ＭＳ Ｐゴシック,sans-serif;
+    line-height: 1.8;
 
     @include max-screen($breakpoint-mobile) {
+      width: 100%;
       font-size: 34px;
     }
   }
   p {
-    margin-top: 60px;
+    margin-top: 30px;
     line-height: 2.7;
 
     @include max-screen($breakpoint-mobile) {

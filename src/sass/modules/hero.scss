@@ -42,21 +42,23 @@
 }
 
 .hero__title {
-  font-size: 90px;
+  margin-top: 80px;
+  font-size: 88px;
   font-weight: bold;
   line-height: 1.21;
 
   @include max-screen($breakpoint-mobile) {
+    margin-top: 0;
     font-size: 60px;
   }
 
   i {
     display: inline-block;
-    width: 85px;
-    height: 97px;
+    width: 70px;
+    height: 82px;
     position: absolute;
-    top: 50%;
-    right: 8%;
+    top: 56%;
+    right: 10%;
     opacity: 0;
     background-color: $color-primary;
 
@@ -81,10 +83,11 @@
 }
 
 .hero__description {
-  margin-top: 80px;
-  font-size: 26px;
+  margin-top: 50px;
+  font-size: 22px;
 
   @include max-screen($breakpoint-mobile) {
+    margin-top: 80px;
     font-size: 20px;
   }
 }

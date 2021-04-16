@@ -54,8 +54,8 @@
     &:before,
     &:after {
       display: block;
-      width: 64px;
-      height: 71px;
+      width: 54px;
+      height: 61px;
       position: absolute;
       top: 0;
       content: '';
@@ -68,7 +68,7 @@
       }
     }
     &:before {
-      left: 19%;
+      left: 24%;
       transform: scaleX(-1);
 
       @include max-screen($breakpoint-mobile) {
@@ -76,7 +76,7 @@
       }
     }
     &:after {
-      left: 75%;
+      left: 71%;
 
       @include max-screen($breakpoint-mobile) {
         left: 90%;

@@ -69,9 +69,9 @@
   }
 }
 .l-confirm__row {
-  width: 1000px;
+  width: 800px;
   margin: 0 auto;
-  padding: 45px 0;
+  padding: 35px 0;
   text-align: left;
   border-top: 1px solid #707070;
 
@@ -87,8 +87,8 @@
 
   label {
     display: block;
-    margin-bottom: 15px;
-    font-size: 18px;
+    margin-bottom: 10px;
+    font-size: 16px;
     font-weight: 500;
 
     @include max-screen($breakpoint-mobile) {
@@ -97,7 +97,7 @@
   }
   input {
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     pointer-events: none;
 

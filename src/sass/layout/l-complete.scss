@@ -49,8 +49,8 @@
     &:before,
     &:after {
       display: block;
-      width: 64px;
-      height: 71px;
+      width: 54px;
+      height: 61px;
       position: absolute;
       top: 0;
       content: '';
@@ -64,7 +64,7 @@
       }
     }
     &:before {
-      left: 25%;
+      left: 30%;
       transform: scaleX(-1);
 
       @include max-screen($breakpoint-mobile) {
@@ -72,7 +72,7 @@
       }
     }
     &:after {
-      left: 70%;
+      left: 65%;
 
       @include max-screen($breakpoint-mobile) {
         left: 90%;
@@ -81,7 +81,7 @@
   }
   h3 {
     margin-bottom: 50px;
-    font-size: 35px;
+    font-size: 30px;
 
     @include max-screen($breakpoint-mobile) {
       font-size: 30px;

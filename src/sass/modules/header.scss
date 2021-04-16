@@ -5,8 +5,8 @@
 
 .header__logo {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 35px;
+  left: 35px;
 
   @include max-screen($breakpoint-mobile) {
     width: 80px;

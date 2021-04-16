@@ -17,6 +17,7 @@
     "animejs": "^3.2.1",
     "browser-sync": "^2.26.7",
     "canvas-confetti": "^1.4.0",
+    "jquery-validation": "^1.19.3",
     "rellax": "^1.12.1"
   }
 }

@@ -1,3 +1,5 @@
+import validate from 'jquery-validation';
+
 export default function formActions() {
 	function getFormData($form){
 	    var unindexed_array = $form.serializeArray();
@@ -48,14 +50,30 @@ export default function formActions() {
 		let retrievedObject = JSON.parse(localStorage.getItem('registerData'));
 		$('#js-register-name').val(retrievedObject.stage_name);
 		$('#js-register-email').val(retrievedObject.email);
-		$('#js-register-category').val(retrievedObject.category);
+		
+		if(retrievedObject.category_other) {
+			$('#js-register-category').val(`${retrievedObject.category}, ${retrievedObject.category_other}`);
+		}
+		else {
+			$('#js-register-category').val(retrievedObject.category);
+		}
+
 		$('#js-register-sns').val(
 			`Twitter: ${retrievedObject.sns_twitter}
 			Instagram: ${retrievedObject.sns_instagram}
 			Youtube: ${retrievedObject.sns_youtube}
 			その他: ${retrievedObject.sns_other}`
 		);
+
 		$('#js-register-office').val(retrievedObject.office);
+
+		if(retrievedObject.office_name) {
+			$('#js-register-office').val(`${retrievedObject.office}: ${retrievedObject.office_name}`);
+		}
+		else {
+			$('#js-register-office').val(retrievedObject.office);
+		}
+
 		$('#js-register-message').val(retrievedObject.message);
 		$('#js-register-referral').val(localStorage.getItem('referral'));
 	}
@@ -74,4 +92,60 @@ export default function formActions() {
 		$('#js-contact-category').val(retrievedObject.category);
 		$('#js-contact-message').val(retrievedObject.message);
 	}
+
+	$('input[name="category"]').on('change', (e) => {
+		if($('#category_other').is(':checked')) {
+			$('#js-category-input').show();
+			$('#js-category-input').focus();
+		}
+		else {
+			$('#js-category-input').hide();
+		}
+	});
+	$('input[name="office"]').on('change', (e) => {
+		if($('#office_yes').is(':checked')) {
+			$('#js-office-input').show();
+			$('#js-office-input').focus();
+		}
+		else {
+			$('#js-office-input').hide();
+		}
+	});
+	$('input[name="agree"]').on('change', (e) => {
+		$('#js-register-confirm').toggleClass('is-disabled');
+	});
+
+	$('#js-register-form').validate({
+	    ignore: [],
+	    rules: {
+	      	stage_name: 'required',
+	      	email: {
+	        	required: true,
+	        	email: true
+	      	},
+	      	email_confirm: {
+	        	equalTo: '[name="email"]'
+	      	},
+	      	category: 'required',
+	      	office: 'required',
+	    },
+	    messages: {
+	      	stage_name: '入力してください。',
+	      	email: {
+	        	required: '入力してください。',
+	        	email: '入力してください。'
+	      	},
+	      	email_confirm: {
+	        	equalTo: 'メールは同一ではありません',
+	      	},
+	      	category: '入力してください。',
+	    	office: '入力してください。'
+	    },
+	    errorPlacement: function(error, element) {
+		    error.insertAfter(element.closest('.contact-form__row--required'));
+		},
+	    submitHandler: function(form) {
+	     	window.location.href = '/vom-lp/confirm';
+	    }
+	});
 }
