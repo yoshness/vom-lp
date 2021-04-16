@@ -1,4 +1,4 @@
-<main class="l-complete l-complete--sub">
+<main class="l-complete l-complete--sub" id="js-contact-complete-page">
 	<div class="l-container">
 		<h2 class="section-title">THANK YOU</h2>
 		<h3>送信が完了しました！</h3>

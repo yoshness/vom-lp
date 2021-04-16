@@ -5,7 +5,7 @@
 	$phone = $_POST['phone'];
 	$category = $_POST['category'];
 	$message = $_POST['message'];
-	$recipient = "josiah.dabuet@gmail.com";
+	$recipient = "keito.nagao@wunderbar.co.jp";
 	$recipient2 = "itoshun14@gmail.com";
 	$sender = $_POST['email'];
 

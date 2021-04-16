@@ -360,6 +360,7 @@
 
   @include max-screen($breakpoint-mobile) {
     bottom: 100px;
+    left: 0;
     font-size: 10px;
   }
 }

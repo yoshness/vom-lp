@@ -89,7 +89,14 @@ export default function formActions() {
 		$('#js-contact-person').val(retrievedObject.person);
 		$('#js-contact-email').val(retrievedObject.email);
 		$('#js-contact-phone').val(retrievedObject.phone);
-		$('#js-contact-category').val(retrievedObject.category);
+
+		if(retrievedObject.category_other) {
+			$('#js-contact-category').val(`${retrievedObject.category}, ${retrievedObject.category_other}`);
+		}
+		else {
+			$('#js-contact-category').val(retrievedObject.category);
+		}
+
 		$('#js-contact-message').val(retrievedObject.message);
 	}
 
@@ -145,7 +152,43 @@ export default function formActions() {
 		    error.insertAfter(element.closest('.contact-form__row--required'));
 		},
 	    submitHandler: function(form) {
-	     	window.location.href = '/vom-lp/confirm';
+	     	window.location.href = `${window.location.origin}/vom-lp/confirm`;
+	    }
+	});
+
+	$('#js-contact-form').validate({
+	    ignore: [],
+	    rules: {
+	      	company: 'required',
+	      	person: 'required',
+	      	email: {
+	        	required: true,
+	        	email: true
+	      	},
+	      	email_confirm: {
+	        	equalTo: '[name="email"]'
+	      	},
+	      	phone: 'required',
+	      	category: 'required'
+	    },
+	    messages: {
+	      	company: '入力してください。',
+	      	person: '入力してください。',
+	      	email: {
+	        	required: '入力してください。',
+	        	email: '入力してください。'
+	      	},
+	      	email_confirm: {
+	        	equalTo: 'メールは同一ではありません',
+	      	},
+	      	phone: '入力してください。',
+	      	category: '入力してください。'
+	    },
+	    errorPlacement: function(error, element) {
+		    error.insertAfter(element.closest('.contact-form__row--required'));
+		},
+	    submitHandler: function(form) {
+	     	window.location.href = `${window.location.origin}/vom-lp/contact-confirm`;
 	    }
 	});
 }
