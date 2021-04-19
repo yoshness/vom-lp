@@ -46,6 +46,12 @@
 		        	<meta property="og:description" content="VOMのプライバシーポリシーページです。個人情報の取扱いについて掲載しています。" />
 			    <?php break;
 		    }
+
+		    if(isset($_GET['referral'])) { ?>
+		    	<title>VOM｜ファンと著名人による日本最大級の動画メッセージプラットフォーム</title>
+	        	<meta property="og:title" content="VOM｜ファンと著名人による日本最大級の動画メッセージプラットフォーム">
+	        	<meta property="og:description" content="VOMは、ファンと著名人による日本最大級の動画メッセージプラットフォームです。あなたにしか出来ない特別なサプライズを、VOMで実現しましょう。" />
+	    	<?php }
 		?>
 
 		<meta property="og:site_name" content="VOM" />

@@ -42,10 +42,8 @@ export default function formActions() {
 		let data = getFormData($('#js-register-form'));
 		localStorage.setItem('registerData', JSON.stringify(data));
 
-		if(localStorage.getItem('referral') == '') {
-			let referral = getUrlParameter('referral') ? getUrlParameter('referral') : 'None';
-			localStorage.setItem('referral', referral);
-		}
+		let referral = getUrlParameter('referral') ? getUrlParameter('referral') : 'None';
+		localStorage.setItem('referral', referral);
 	});
 
 	if($('#js-register-confirm-page').length > 0) {
