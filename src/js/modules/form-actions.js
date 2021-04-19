@@ -154,7 +154,7 @@ export default function formActions() {
 		    error.insertAfter(element.closest('.contact-form__row--required'));
 		},
 	    submitHandler: function(form) {
-	     	window.location.href = `${window.location.origin}/vom/confirm`;
+	     	window.location.href = `${window.location.origin}/confirm`;
 	    }
 	});
 
@@ -190,7 +190,7 @@ export default function formActions() {
 		    error.insertAfter(element.closest('.contact-form__row--required'));
 		},
 	    submitHandler: function(form) {
-	     	window.location.href = `${window.location.origin}/vom/contact-confirm`;
+	     	window.location.href = `${window.location.origin}/contact-confirm`;
 	    }
 	});
 }

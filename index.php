@@ -1,36 +1,34 @@
 <?php
 
-
-
-	$domainPath = '/vom-lp/';
+	$domainPath = '/';
 	include 'partials/header.php';
 
 	switch ($request) {
-	    case '/vom-lp/':
+	    case '/':
         	require __DIR__ . '/views/index.php';
 	        break;
-	    case '/vom-lp/confirm':
-	    case '/vom-lp/confirm/':
+	    case '/confirm':
+	    case '/confirm/':
         	require __DIR__ . '/views/register/confirm.php';
 	        break;
-	    case '/vom-lp/thank-you':
-	    case '/vom-lp/thank-you/':
+	    case '/thank-you':
+	    case '/thank-you/':
         	require __DIR__ . '/views/register/complete.php';
 	        break;
-	    case '/vom-lp/contact':
-	    case '/vom-lp/contact/':
+	    case '/contact':
+	    case '/contact/':
         	require __DIR__ . '/views/contact/contact.php';
 	        break;
-	    case '/vom-lp/contact-confirm':
-	    case '/vom-lp/contact-confirm/':
+	    case '/contact-confirm':
+	    case '/contact-confirm/':
         	require __DIR__ . '/views/contact/confirm.php';
 	        break;
-	    case '/vom-lp/contact-complete':
-	    case '/vom-lp/contact-complete/':
+	    case '/contact-complete':
+	    case '/contact-complete/':
         	require __DIR__ . '/views/contact/complete.php';
 	        break;
-	    case '/vom-lp/privacy':
-	    case '/vom-lp/privacy/':
+	    case '/privacy':
+	    case '/privacy/':
         	require __DIR__ . '/views/privacy.php';
 	        break;
         default:
