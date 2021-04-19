@@ -10,6 +10,7 @@ import heroAnimation from './modules/hero-animation';
 import scrollToElement from './modules/scroll-to-element';
 import congratulations from './modules/congratulations';
 import separateLetters from './modules/separate-letters';
+import checkIfIOS from './modules/check-if-ios';
 
 scrollActivate();
 initParallax();
@@ -17,6 +18,7 @@ locker();
 formActions();
 scrollToElement();
 separateLetters();
+checkIfIOS();
 
 if($('#js-top').length > 0) {
 	heroAnimation();
@@ -25,10 +27,11 @@ if($('#js-top').length > 0) {
 if($('#js-register-complete-page').length > 0) {
 	congratulations();
 	localStorage.setItem('registerData', '');
+	localStorage.setItem('referral', '');
 }
 
 if($('#js-register-form').length > 0) {
-	if(localStorage.getItem('registerData') != '') {
+	if(localStorage.getItem('registerData')) {
 		let retrievedObject = JSON.parse(localStorage.getItem('registerData'));
 
 		$('input[name="stage_name"]').val(retrievedObject.stage_name);
@@ -48,10 +51,11 @@ if($('#js-register-form').length > 0) {
 
 if($('#js-contact-complete-page').length > 0) {
 	localStorage.setItem('contactData', '');
+	localStorage.setItem('referral', '');
 }
 
 if($('#js-contact-form').length > 0) {
-	if(localStorage.getItem('contactData') != '') {
+	if(localStorage.getItem('contactData')) {
 		let retrievedObject = JSON.parse(localStorage.getItem('contactData'));
 
 		$('input[name="company"]').val(retrievedObject.company);

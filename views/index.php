@@ -39,7 +39,7 @@
 				<li class="description-block js-scroll-activate-item" data-delay="300">
 					<img src="<?php echo $domainPath; ?>public/images/index/function-2.png" alt="">
 					<h3>可処分時間で収益を上げられる</h3>
-					<p>あなたの30秒〜60秒が短時間で収益に変わります。リクエストを受け取り、対応した総額の75%が配信者側に支払われます。機材も必要なく素のあなたである事が大切です。</p>
+					<p>あなたの30秒〜60秒が短時間で収益に変わります。リクエストを受け取り、対応した総額の50%が配信者側に支払われます。機材も必要なく素のあなたである事が大切です。</p>
 				</li>
 				<li class="description-block js-scroll-activate-item" data-delay="600">
 					<img src="<?php echo $domainPath; ?>public/images/index/function-3.png" alt="">
@@ -104,7 +104,7 @@
 				<img src="<?php echo $domainPath; ?>public/images/index/monetize-1.png" class="rellax" data-rellax-speed="2">
 				<img src="<?php echo $domainPath; ?>public/images/index/monetize-2.png" class="u-show-pc">
 				<img src="<?php echo $domainPath; ?>public/images/index/monetize-2-sp.png" class="u-show-sp">
-				<p class="l-index__monetize-note">※上記は参考例になります。リクエストが多く、対応する回数が増えるほど、収益が高まります。<br>※ユーザーは費用を支払い、動画受け渡し後に依頼額の75%が撮影者の収益となり、<br>25%がプラットフォーム上の手数料になります。</p>
+				<p class="l-index__monetize-note">※上記は参考例になります。リクエストが多く、対応する回数が増えるほど、収益が高まります。<br>※ユーザーは費用を支払い、動画受け渡し後に依頼額の50%が撮影者の収益となり、<br>50%がプラットフォーム上の手数料になります。</p>
 			</div>
 		</div>
 	</section> 
@@ -163,8 +163,7 @@
 				<h2>事務所所属の皆様へ</h2>
 				<p> 
 					所属されている場合でも、<em>事前登録自体は問題ございません。（仮登録のため）</em><br>
-					また実際に本サービスを用いて収益化をする場合は、事務所様との業務提携（協力）する体制なども整っておりますため、一度マネージャー様や上層部の方に以下リンク資料を共有の上、ご紹介いただけると幸いです。<br>
-					（実際に本サービスを著名人の方が知り、事務所につないでいただき、既に弊社とプロダクション様の業務提携も実施・増加しております）
+					また実際に本サービスを用いて収益化をする場合は、事務所様との業務提携（協力）する体制なども整っておりますため、一度マネージャー様や上層部の方に以下リンクよりお問い合わせいただき、ご紹介いただけると幸いです。<br>（現状、大手事務所から規模問わず多くの業務提携が進んでおります。業務提携後はタレントさま、プロダクションさまへの手数料条件が圧倒的に良くなります。）
 				</p>
 				<a href="<?php echo $domainPath; ?>contact" class="link-button link-button--rounded">サービス概要資料について</a>
 			</div>
@@ -179,6 +178,7 @@
 			<h3 class="js-scroll-activate-item">サービスにかける想い</h3>
 			<h2 class="section-title js-scroll-activate-item" data-delay="400">
 				<span class="blur-text js-separate-letters">日本中を本気で元気に</span>
+				<br>
 				<span class="blur-text js-separate-letters" data-blur-delay="1">そして勇気を感動を。</span>
 			</h2>
 			<p class="js-scroll-activate-item" data-delay="2800">私には父との記憶がほとんどありません。父が仕事人間で家にいませんでした。<br>父は私が17歳の頃にガンで亡くなりました。父の葬式には5階建てのビルが全フロア埋まるほどの参列者がいました。<br>父は何をしている人なのか。私はその時初めて「時価総額1兆円を超える会社の北海道支社長」という<br class="u-show-pc">想像をはるかに超える偉大さを知りました。父から教わることはないと思いましたが、父の葬儀は、父の集大成であり<br class="u-show-pc">父が世の中に与え続けた、貢献し続けた結果なんだ、と強く実感しました。父は死をもって背中で教えてくれました。<br>現在、日本そして、世界はコロナ禍によって活力を失い、元気を失っています。<br>今こそエンタメの本質が問われています。日本を元気にするには、ファン一人一人を元気にする他ありません。<br>このサービスを通して、著名人からファン一人一人にメッセージを送ることが、日本を元気にすると確信しています。<br>どうか、事務所の皆様、ファンが付いている著名人の皆様、お力をお貸しください。</p>

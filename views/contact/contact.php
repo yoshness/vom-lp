@@ -28,7 +28,7 @@
 				<label for="">カテゴリ（複数選択可）</label>
 				<div class="contact-form__checkboxes custom-checkboxes">
 					<input id="category_1" name="category" value="メディア・取材に関する問い合わせ" type="checkbox"><label for="category_1">メディア・取材に関する問い合わせ</label>
-					<input id="category_2" name="category" value="芸能事務所など業務提携にについて" type="checkbox"><label for="category_2">芸能事務所など業務提携にについて</label>
+					<input id="category_2" name="category" value="芸能事務所など業務提携について" type="checkbox"><label for="category_2">芸能事務所など業務提携について</label>
 					<input id="category_3" name="category" value="サービス全般に関する問い合わせ" type="checkbox"><label for="category_3">サービス全般に関する問い合わせ</label>
 					<input id="category_4" name="category" value="資料請求" type="checkbox"><label for="category_4">資料請求</label>
 					<input id="category_other" name="category" value="その他（備考に詳細をご記入ください）" type="checkbox"><label for="category_other">その他（備考に詳細をご記入ください）</label>
