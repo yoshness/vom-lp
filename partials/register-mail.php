@@ -10,7 +10,7 @@
     $sender     = $_POST['email'] ?? '---';
     $referral   = $_POST['referral'] ?? '---';
 
-    $recipient  = "josiah.dabuet@gmail.com";
+    $recipient  = "keito.nagao@wunderbar.co.jp";
     $recipient2 = "itoshun14@gmail.com";
 
     $client = new Google\Client();
