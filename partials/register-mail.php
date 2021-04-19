@@ -1,14 +1,48 @@
-<?php 
-	$stage_name = $_POST['stage_name'];
-	$email = $_POST['email'];
-	$category = $_POST['category'];
-	$sns = $_POST['sns'];
-	$office = $_POST['office'];
-	$message = $_POST['message'];
-	$referral = $_POST['referral'];
-	$recipient = "keito.nagao@wunderbar.co.jp";
-	$recipient2 = "itoshun14@gmail.com";
-	$sender = $_POST['email'];
+<?php
+    require_once './vendor/autoload.php';
+
+    $stage_name = $_POST['stage_name'] ?? '---';
+    $email      = $_POST['email'] ?? '---';
+    $category   = $_POST['category'] ?? '---';
+    $sns        = $_POST['sns'] ?? '---';
+    $office     = $_POST['office'] ?? '---';
+    $message    = $_POST['message'] ?? '---';
+    $sender     = $_POST['email'] ?? '---';
+    $referral   = $_POST['referral'] ?? '---';
+
+    $recipient  = "keito.nagao@wunderbar.co.jp";
+    $recipient2 = "itoshun14@gmail.com";
+
+    $client = new Google\Client();
+    $client->setApplicationName("VOM LP Sheets Integraation");
+    $client->setScopes([\Google_Service_Sheets::SPREADSHEETS]);
+    $client->setAuthConfig(__DIR__ . '/../credentials.json');
+
+    $service = new \Google_Service_Sheets($client);
+
+    $spreadsheetId = "1J1RKbwQb-Di63R3hWn6A_ziftxCtciAIIiJeLk7himA";
+
+    $range = "シート1!A:G";
+    $valueRange= new Google_Service_Sheets_ValueRange();
+    $valueRange->setValues([
+        "values" => [
+            $stage_name,
+            $email,
+            $category,
+            $sns,
+            $office,
+            $message,
+            $sender,
+            $referral
+        ]
+    ]);
+
+    $conf = ["valueInputOption" => "USER_ENTERED"];
+    $ins = ["insertDataOption" => "INSERT_ROWS"];
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $service->spreadsheets_values->append($spreadsheetId, $range, $valueRange, $conf, $ins);
+    }
 
 	$subject_admin = "【VOM】事前登録がありました。";
 	$content_admin ="下記の内容で事前登録がありました。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n\nReferral: $referral \n-----";

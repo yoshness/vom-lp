@@ -1,4 +1,7 @@
-<?php 
+<?php
+
+
+
 	$domainPath = '/vom-lp/';
 	include 'partials/header.php';
 
