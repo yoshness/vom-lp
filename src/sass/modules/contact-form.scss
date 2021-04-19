@@ -1,5 +1,5 @@
 .contact-form {
-  width: 1000px;
+  width: 800px;
   position: relative;
   margin: 0 auto;
 
@@ -10,9 +10,46 @@
   input[type='submit'] {
     font-weight: bold;
   }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+
+    -webkit-text-fill-color: #fff !important;
+    caret-color: #fff;
+  }
+
+  input[name='office_name'],
+  input[name='category_other'] {
+    display: none;
+  }
+
+  .link-button {
+    &.is-disabled {
+      pointer-events: none;
+      color: #727070;
+      border-color: #727070;
+    }
+  }
+
+  label.error {
+    display: block;
+    margin-top: -35px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: red !important;
+
+    @include max-screen($breakpoint-mobile) {
+      margin-top: -30px;
+    }
+  }
 }
 .contact-form__row {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   text-align: left;
 
   @include max-screen($breakpoint-mobile) {
@@ -21,8 +58,8 @@
 
   label {
     display: inline-block;
-    margin-bottom: 18px;
-    font-size: 18px;
+    margin-bottom: 16px;
+    font-size: 16px;
     font-weight: 600;
 
     @include max-screen($breakpoint-mobile) {
@@ -33,7 +70,7 @@
     &[type='text'],
     &[type='email'] {
       width: 100%;
-      padding: 25px 30px;
+      padding: 22px 30px;
       border-radius: 10px;
       background-color: #191919;
 
@@ -68,11 +105,11 @@
   label {
     &:after {
       display: inline-block;
-      width: 65px;
-      height: 24px;
-      margin-left: 30px;
+      width: 55px;
+      height: 20px;
+      margin-left: 28px;
       font-size: 12px;
-      line-height: 2;
+      line-height: 1.7;
       content: '必須';
       text-align: center;
       color: #2e2e2e;
@@ -89,53 +126,33 @@
   }
 }
 .contact-form__checkboxes {
+  &.contact-form__checkboxes--flex {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    label {
+      width: 20%;
+      margin-right: 0 !important;
+
+      @include max-screen($breakpoint-mobile) {
+        width: 50%;
+      }
+    }
+  }
+
   label {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
 
     @include max-screen($breakpoint-mobile) {
       font-size: 17px;
     }
-
-    &:first-of-type,
-    &:nth-of-type(2) {
-      margin-right: 40px;
-    }
-    &:nth-of-type(3) {
-      margin-right: 90px;
-    }
-    &:nth-of-type(4) {
-      margin-right: 40px;
-    }
-    &:nth-of-type(7) {
-      margin-right: 0;
-    }
-    &:nth-of-type(10) {
-      margin-right: 72px;
-    }
-    &:nth-of-type(11) {
-      margin-right: 73px;
-    }
-    &:nth-of-type(12) {
-      margin-right: 9px;
-    }
-    &:nth-of-type(13) {
-      margin-right: 30px;
-    }
-    &:nth-of-type(14) {
-      margin-right: 52px;
-    }
-    &:nth-of-type(16) {
-      margin-right: 73px;
-    }
-    &:nth-of-type(17) {
-      margin-right: 41px;
-    }
   }
 }
 .contact-form__terms {
   margin-bottom: 45px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
 
   @include max-screen($breakpoint-mobile) {
@@ -175,5 +192,14 @@
   a {
     color: #fff;
     border-bottom: 1px solid #fff;
+  }
+}
+
+
+@-webkit-keyframes autofill {
+  0%,
+  100% {
+    color: #fff;
+    background: #191919;
   }
 }

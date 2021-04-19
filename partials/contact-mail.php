@@ -5,7 +5,7 @@
 	$phone = $_POST['phone'];
 	$category = $_POST['category'];
 	$message = $_POST['message'];
-	$recipient = "josiah.dabuet@gmail.com";
+	$recipient = "keito.nagao@wunderbar.co.jp";
 	$recipient2 = "itoshun14@gmail.com";
 	$sender = $_POST['email'];
 
@@ -13,7 +13,7 @@
 	$content_admin ="下記の内容でVOMより問い合わせがありました。\n折り返しの対応をお願いいたします。\n\n-----\n会社名:\n $company \n\n担当名:\n $person \n\nメールアドレス:\n $email \n\n電話番号:\n$phone\n\nカテゴリ:\n $category\n\n備考:\n $message\n-----";
 
 	$subject_sender = "【VOM】お問い合わせありがとうございます。";
-	$content_sender ="$person 様\n\nVOMにお問い合わせいただきありがとうございます。\n下記の内容でお問い合わせをうけたまわりました。\n弊社で内容を確認の上、折り返しご連絡いたしますのでいましばらくお待ち下さい。\n\n-----\n会社名:\n $company \n\n担当名:\n $person \n\nメールアドレス:\n $email \n\n電話番号:\n$phone\n\nカテゴリ:\n $category\n\n備考:\n $message\n-----\n\nこちらのメールは VOM (https://vom.com) の無料相談フォームから送信されました。\nなお、こちらのメールは自動返信メールとなっております。";
+	$content_sender ="$person 様\n\nVOMにお問い合わせいただきありがとうございます。\n下記の内容でお問い合わせをうけたまわりました。\n弊社で内容を確認の上、折り返しご連絡いたしますのでいましばらくお待ち下さい。\n\n-----\n会社名:\n $company \n\n担当名:\n $person \n\nメールアドレス:\n $email \n\n電話番号:\n$phone\n\nカテゴリ:\n $category\n\n備考:\n $message\n-----\n\nこちらのメールは VOM (https://vom.world) の無料相談フォームから送信されました。\nなお、こちらのメールは自動返信メールとなっております。";
 
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\Exception;
@@ -28,7 +28,7 @@
 		$mail = new PHPMailer(true);
 		$mail->CharSet = 'UTF-8';
 		$mail->Encoding = 'base64';
-		$mail->setFrom('no-reply@vom.com', 'お問い合わせ');
+		$mail->setFrom('no-reply@vom.world', 'お問い合わせ');
 	    $mail->addAddress($recipient);
 	    $mail->addAddress($recipient2);
 	    $mail->Subject = $subject_admin;
@@ -38,7 +38,7 @@
 		$mail2 = new PHPMailer(true);
 		$mail2->CharSet = 'UTF-8';
 		$mail2->Encoding = 'base64';
-		$mail2->setFrom('no-reply@vom.com', 'お問い合わせ');
+		$mail2->setFrom('no-reply@vom.world', 'お問い合わせ');
 	    $mail2->addAddress($sender);
 		$mail2->Subject = $subject_sender;
 		$mail2->Body    = $content_sender;

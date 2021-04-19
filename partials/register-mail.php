@@ -45,10 +45,10 @@
     }
 
 	$subject_admin = "【VOM】お問い合わせがありました。";
-	$content_admin ="下記の内容でVOMより問い合わせがありました。\n折り返しの対応をお願いいたします。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n\nReferral: $referral \n-----";
+	$content_admin ="下記の内容で事前登録がありました。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n\nReferral: $referral \n-----";
 
 	$subject_sender = "【VOM】お問い合わせありがとうございます。";
-	$content_sender ="$person 様\n\nVOMにお問い合わせいただきありがとうございます。\n下記の内容でお問い合わせをうけたまわりました。\n弊社で内容を確認の上、折り返しご連絡いたしますのでいましばらくお待ち下さい。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n-----\n\nこちらのメールは VOM (https://vom.com) の無料相談フォームから送信されました。\nなお、こちらのメールは自動返信メールとなっております。";
+	$content_sender ="$person 様\n\nこの度は、「日本を元気にする」に共感いただきありがとうございます。\n事前登録を下記の内容でうけたまわりました。\n間も無くサービスリリースとなりますので、リリース間近となりましたら、改めてご登録いただいたアドレスへご連絡させていただきます。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n-----\n\nこちらのメールは VOM (https://vom.world) の無料相談フォームから送信されました。\nなお、こちらのメールは自動返信メールとなっております。";
 
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\Exception;
@@ -63,7 +63,7 @@
 		$mail = new PHPMailer(true);
 		$mail->CharSet = 'UTF-8';
 		$mail->Encoding = 'base64';
-		$mail->setFrom('no-reply@vom.com', 'お問い合わせ');
+		$mail->setFrom('no-reply@vom.world', 'お問い合わせ');
 	    $mail->addAddress($recipient);
 	    $mail->addAddress($recipient2);
 	    $mail->Subject = $subject_admin;
@@ -73,7 +73,7 @@
 		$mail2 = new PHPMailer(true);
 		$mail2->CharSet = 'UTF-8';
 		$mail2->Encoding = 'base64';
-		$mail2->setFrom('no-reply@vom.com', 'お問い合わせ');
+		$mail2->setFrom('no-reply@vom.world', 'お問い合わせ');
 	    $mail2->addAddress($sender);
 		$mail2->Subject = $subject_sender;
 		$mail2->Body    = $content_sender;

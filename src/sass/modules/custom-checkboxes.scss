@@ -9,8 +9,8 @@
   }
   label {
     position: relative;
-    margin-right: 25px;
-    padding-left: 35px;
+    margin-right: 21px;
+    padding-left: 30px;
     cursor: pointer;
 
     @include max-screen($breakpoint-mobile) {
@@ -19,8 +19,8 @@
     }
 
     &:before {
-      width: 26px;
-      height: 26px;
+      width: 21px;
+      height: 21px;
       position: absolute;
       top: 50%;
       left: 0;
@@ -33,8 +33,8 @@
     }
     &:after {
       display: none;
-      width: 16px;
-      height: 18px;
+      width: 13px;
+      height: 15px;
       position: absolute;
       top: 50%;
       left: 5px;
@@ -47,11 +47,11 @@
   }
   input[type='text'] {
     display: inline-block;
-    width: 82%;
-    margin-bottom: 20px;
+    width: 82.8%;
+    margin-bottom: 10px;
 
     @include max-screen($breakpoint-mobile) {
-      width: 56%;
+      width: 61.5%;
       margin-bottom: 15px;
     }
   }

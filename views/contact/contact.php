@@ -18,7 +18,7 @@
 			</div>
 			<div class="contact-form__row contact-form__row--required">
 				<label for="">メールアドレス（再確認用）</label>
-				<input type="email" placeholder="例）vvv@gmail.com" name="email">
+				<input type="email" placeholder="例）vvv@gmail.com" name="email_confirm">
 			</div>
 			<div class="contact-form__row contact-form__row--required">
 				<label for="">電話番号</label>
@@ -31,15 +31,15 @@
 					<input id="category_2" name="category" value="芸能事務所など業務提携にについて" type="checkbox"><label for="category_2">芸能事務所など業務提携にについて</label>
 					<input id="category_3" name="category" value="サービス全般に関する問い合わせ" type="checkbox"><label for="category_3">サービス全般に関する問い合わせ</label>
 					<input id="category_4" name="category" value="資料請求" type="checkbox"><label for="category_4">資料請求</label>
-					<input id="category_5" name="category" value="その他（備考に詳細をご記入ください）" type="checkbox"><label for="category_5">その他（備考に詳細をご記入ください）</label>
+					<input id="category_other" name="category" value="その他（備考に詳細をご記入ください）" type="checkbox"><label for="category_other">その他（備考に詳細をご記入ください）</label>
 				</div>
-				<input type="text" placeholder="例）その他の場合は、ご記入ください。">
+				<input type="text" name="category_other" placeholder="例）その他の場合は、ご記入ください。" id="js-category-input">
 			</div>
 			<div class="contact-form__row">
 				<label for="">備考</label>
 				<textarea name="message" rows="8" placeholder="例）事務所の人とつなぎたいのですが、どうすれば良いでしょうか？"></textarea>
 			</div>
-			<a href="<?php echo $domainPath; ?>contact-confirm" class="link-button" id="js-contact-confirm">入力内容確認</a>
+			<input type="submit" class="link-button" id="js-contact-confirm" value="入力内容確認">
 		</form>
 	</div>
 </main>

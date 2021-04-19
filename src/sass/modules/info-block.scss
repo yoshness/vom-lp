@@ -16,7 +16,7 @@
 }
 
 .info-block__left {
-  width: 59%;
+  width: 55%;
   position: relative;
   padding-right: 80px;
 
@@ -28,8 +28,8 @@
   }
 
   h2 {
-    margin-bottom: 50px;
-    font-size: 50px;
+    margin-bottom: 55px;
+    font-size: 55px;
     font-weight: bold;
 
     @include max-screen($breakpoint-mobile) {
@@ -40,7 +40,8 @@
   }
 
   p {
-    line-height: 2.5;
+    line-height: 2.7;
+    letter-spacing: -.01em;
 
     @include max-screen($breakpoint-mobile) {
       font-size: 16px;
@@ -56,7 +57,7 @@
 }
 
 .info-block__right {
-  width: 41%;
+  width: 45%;
   position: relative;
 
   @include max-screen($breakpoint-mobile) {

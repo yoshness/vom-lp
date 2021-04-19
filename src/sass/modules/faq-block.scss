@@ -1,7 +1,7 @@
 .faq-block {
-  margin-bottom: 10px;
-  padding: 45px 120px;
-  font-size: 18px;
+  margin-bottom: 5px;
+  padding: 30px 110px;
+  font-size: 15px;
   cursor: pointer;
   text-align: left;
   color: #fff;
@@ -14,7 +14,7 @@
 
   label {
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 20px;
     margin-left: -60px;
 
     @include max-screen($breakpoint-mobile) {
@@ -32,8 +32,8 @@
         border-color: $color-primary;
       }
       &:after {
-        top: 7px;
-        right: -52px;
+        top: 6px;
+        right: -63px;
         border-top-color: $color-primary;
         border-right-color: $color-primary;
         transform: rotate(135deg);
@@ -63,11 +63,11 @@
 
   &:before {
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     position: absolute;
     top: 0;
-    right: -60px;
+    right: -70px;
     content: '';
     border: 2px solid #fff;
     border-radius: 50%;
@@ -82,14 +82,14 @@
   }
   &:after {
     display: block;
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     position: absolute;
-    top: 8px;
-    right: -51px;
+    top: 7px;
+    right: -62px;
     content: '';
-    border-top: 3px solid #fff;
-    border-right: 3px solid #fff;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
     transition: all $duration $easing;
     transform: rotate(45deg);
 

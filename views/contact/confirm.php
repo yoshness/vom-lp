@@ -30,6 +30,6 @@
 			</div>
 			<input type="submit" name="submit" value="送信する" class="link-button">
 		</form>
-		<a href="<?php echo $domainPath; ?>" class="l-confirm__back">←入力画面に戻る</a>
+		<a href="<?php echo $domainPath; ?>contact" class="l-confirm__back">←入力画面に戻る</a>
 	</div>
 </main>

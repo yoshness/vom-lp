@@ -39,7 +39,7 @@
 				<li class="description-block js-scroll-activate-item" data-delay="300">
 					<img src="<?php echo $domainPath; ?>public/images/index/function-2.png" alt="">
 					<h3>可処分時間で収益を上げられる</h3>
-					<p>あなたの30秒〜60秒が短時間で収益に変わります。リクエストを受け取り、対応した総額の70%が配信者側に支払われます。機材も必要なく素のあなたである事が大切です。</p>
+					<p>あなたの30秒〜60秒が短時間で収益に変わります。リクエストを受け取り、対応した総額の75%が配信者側に支払われます。機材も必要なく素のあなたである事が大切です。</p>
 				</li>
 				<li class="description-block js-scroll-activate-item" data-delay="600">
 					<img src="<?php echo $domainPath; ?>public/images/index/function-3.png" alt="">
@@ -102,8 +102,9 @@
 			</div>
 			<div class="info-block__right js-scroll-activate-item" data-delay="400">
 				<img src="<?php echo $domainPath; ?>public/images/index/monetize-1.png" class="rellax" data-rellax-speed="2">
-				<img src="<?php echo $domainPath; ?>public/images/index/monetize-2.png">
-				<p class="l-index__monetize-note">※上記は参考例になります。リクエストが多く、対応する回数が増えるほど、収益が高まります。<br>※ユーザーは費用を支払い、動画受け渡し後に依頼額の70%が撮影者の収益となり、<br>30%がプラットフォーム上の手数料になります。</p>
+				<img src="<?php echo $domainPath; ?>public/images/index/monetize-2.png" class="u-show-pc">
+				<img src="<?php echo $domainPath; ?>public/images/index/monetize-2-sp.png" class="u-show-sp">
+				<p class="l-index__monetize-note">※上記は参考例になります。リクエストが多く、対応する回数が増えるほど、収益が高まります。<br>※ユーザーは費用を支払い、動画受け渡し後に依頼額の75%が撮影者の収益となり、<br>25%がプラットフォーム上の手数料になります。</p>
 			</div>
 		</div>
 	</section> 
@@ -112,7 +113,7 @@
 			<h2 class="section-title js-scroll-activate-item">よくある質問</h2>
 			<ul class="js-scroll-activate-item">
 				<li>
-					<div class="faq-block js-toggle-slide is-active">
+					<div class="faq-block js-toggle-slide">
 						<label for="">Q1</label>
 						<h3 class="faq-block__title">そこまでフォロワーいないですが、登録しても大丈夫ですか？</h3>
 						<p class="faq-block__description js-toggle-target">事前登録申請はどなたでも可能です。サービスリリース時点でVOM独自審査基準により利用が制限される場合もありますが、私たちが大切にしているのは皆様のファンの方々を元気にする”場”を提供することです。<br>フォロワーが数千、数万、多い、少ない関係なく、ファンはあなたからのメッセージを待っています。共に日本を元気にしましょう。</p>
@@ -174,10 +175,13 @@
 		</div>
 	</section>
 	<section class="l-index__message">
-		<div class="l-container js-scroll-activate">
+		<div class="l-container js-scroll-activate slow">
 			<h3 class="js-scroll-activate-item">サービスにかける想い</h3>
-			<h2 class="section-title js-scroll-activate-item" data-delay="400">日本中を本気で元気に<br>そして勇気を感動を。</h2>
-			<p class="js-scroll-activate-item" data-delay="400">私には父との記憶がほとんどありません。父が仕事人間で家にいませんでした。<br>父は私が17歳の頃にガンで亡くなりました。父の葬式には5階建てのビルが全フロア埋まるほどの参列者がいました。<br>父は何をしている人なのか。私はその時初めて「時価総額1兆円を超える会社の北海道支社長」という<br class="u-show-pc">想像をはるかに超える偉大さを知りました。父から教わることはないと思いましたが、父の葬儀は、父の集大成であり<br class="u-show-pc">父が世の中に与え続けた、貢献し続けた結果なんだ、と強く実感しました。父は死をもって背中で教えてくれました。<br>現在、日本そして、世界はコロナ禍によって活力を失い、元気を失っています。<br>今こそエンタメの本質が問われています。日本を元気にするには、ファン一人一人を元気にする他ありません。<br>このサービスを通して、著名人からファン一人一人にメッセージを送ることが、日本を元気にすると確信しています。<br>どうか、事務所の皆様、ファンが付いている著名人の皆様、お力をお貸しください。</p>
+			<h2 class="section-title js-scroll-activate-item" data-delay="400">
+				<span class="blur-text js-separate-letters">日本中を本気で元気に</span>
+				<span class="blur-text js-separate-letters" data-blur-delay="1">そして勇気を感動を。</span>
+			</h2>
+			<p class="js-scroll-activate-item" data-delay="2800">私には父との記憶がほとんどありません。父が仕事人間で家にいませんでした。<br>父は私が17歳の頃にガンで亡くなりました。父の葬式には5階建てのビルが全フロア埋まるほどの参列者がいました。<br>父は何をしている人なのか。私はその時初めて「時価総額1兆円を超える会社の北海道支社長」という<br class="u-show-pc">想像をはるかに超える偉大さを知りました。父から教わることはないと思いましたが、父の葬儀は、父の集大成であり<br class="u-show-pc">父が世の中に与え続けた、貢献し続けた結果なんだ、と強く実感しました。父は死をもって背中で教えてくれました。<br>現在、日本そして、世界はコロナ禍によって活力を失い、元気を失っています。<br>今こそエンタメの本質が問われています。日本を元気にするには、ファン一人一人を元気にする他ありません。<br>このサービスを通して、著名人からファン一人一人にメッセージを送ることが、日本を元気にすると確信しています。<br>どうか、事務所の皆様、ファンが付いている著名人の皆様、お力をお貸しください。</p>
 		</div>
 		<img src="<?php echo $domainPath; ?>public/images/japan-flag.png"  class="rellax" data-rellax-speed="2" data-rellax-xs-speed="1">
 	</section>
@@ -195,11 +199,11 @@
 				</div>
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">メールアドレス（再確認用）</label>
-					<input type="email" placeholder="例）vom@gmail.com" name="email-confirm">
+					<input type="email" placeholder="例）vom@gmail.com" name="email_confirm">
 				</div>
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">カテゴリ（複数選択可）</label>
-					<div class="contact-form__checkboxes custom-checkboxes">
+					<div class="contact-form__checkboxes custom-checkboxes contact-form__checkboxes--flex">
 						<input id="category_1" name="category" value="女優" type="checkbox"><label for="category_1">女優</label>
 						<input id="category_2" name="category" value="俳優" type="checkbox"><label for="category_2">俳優</label>
 						<input id="category_3" name="category" value="芸人" type="checkbox"><label for="category_3">芸人</label>
@@ -218,9 +222,9 @@
 						<input id="category_16" name="category" value="美容家" type="checkbox"><label for="category_16">美容家</label>
 						<input id="category_17" name="category" value="アナウンサー" type="checkbox"><label for="category_17">アナウンサー</label>
 						<input id="category_18" name="category" value="プロデューサー" type="checkbox"><label for="category_18">プロデューサー</label>
-						<input id="category_19" name="category" value="その他" type="checkbox"><label for="category_19">その他</label>
+						<input id="category_other" name="category" value="その他" type="checkbox"><label for="category_other">その他</label>
 					</div>
-					<input type="text" placeholder="例）その他の場合は、ご記入ください。">
+					<input type="text" name="category_other" placeholder="例）その他の場合は、ご記入ください。" id="js-category-input">
 				</div>
 				<div class="contact-form__row">
 					<label for="">SNS情報（最低1つご記入ください）</label>
@@ -237,15 +241,15 @@
 				</div>
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">事務所所属有無</label>
-					<div class="contact-form__checkboxes custom-checkboxes">
+					<div class="contact-form__checkboxes custom-checkboxes contact-form__checkboxes--flex">
 						<input id="office_yes" name="office" value="所属している" type="radio"><label for="office_yes">所属している</label>
 						<input id="office_no" name="office" value="所属していない" type="radio"><label for="office_no">所属していない</label>
 					</div>
-					<input type="text" placeholder="例）ジョンソン事務所">
+					<input type="text" name="office_name" placeholder="例）ジョンソン事務所" id="js-office-input">
 				</div>
 				<div class="contact-form__row">
 					<label for="">ご質問、ご要望等</label>
-					<textarea name="message" rows="8" placeholder="例）事務所の人とつなぎたいのですが、どうすれば良いでしょうか？"></textarea>
+					<textarea name="message" rows="7" placeholder="例）事務所の人とつなぎたいのですが、どうすれば良いでしょうか？"></textarea>
 				</div>
 				<div class="contact-form__terms">
 					<p>当社の<a href="<?php echo $domainPath; ?>privacy">個人情報保護方針</a>について、<br>ご同意の上、確認画面へお進みくださいませ。</p>
@@ -253,7 +257,7 @@
 						<input id="agree" name="agree" value="同意する" type="checkbox"><label for="agree">同意する</label>
 					</div>
 				</div>
-				<a href="<?php echo $domainPath; ?>confirm" class="link-button" id="js-register-confirm">入力内容確認</a>
+				<input type="submit" class="link-button is-disabled" id="js-register-confirm" value="入力内容確認">
 				<p class="l-complete__notice">
 					メディア、取材、事務所関係の業務提携等に関する<br>お問い合わせは<a href="<?php echo $domainPath; ?>contact">こちら</a>をご利用くださいませ。
 				</p>
