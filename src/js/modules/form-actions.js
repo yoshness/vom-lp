@@ -42,8 +42,10 @@ export default function formActions() {
 		let data = getFormData($('#js-register-form'));
 		localStorage.setItem('registerData', JSON.stringify(data));
 
-		let referral = getUrlParameter('referral') ? getUrlParameter('referral') : 'None';
-		localStorage.setItem('referral', referral);
+		if(localStorage.getItem('referral') == '') {
+			let referral = getUrlParameter('referral') ? getUrlParameter('referral') : 'None';
+			localStorage.setItem('referral', referral);
+		}
 	});
 
 	if($('#js-register-confirm-page').length > 0) {
@@ -145,14 +147,14 @@ export default function formActions() {
 	      	email_confirm: {
 	        	equalTo: 'メールは同一ではありません',
 	      	},
-	      	category: '入力してください。',
-	    	office: '入力してください。'
+	      	category: '選択してください。',
+	    	office: '選択してください。'
 	    },
 	    errorPlacement: function(error, element) {
 		    error.insertAfter(element.closest('.contact-form__row--required'));
 		},
 	    submitHandler: function(form) {
-	     	window.location.href = `${window.location.origin}/vom-lp/confirm`;
+	     	window.location.href = `${window.location.origin}/vom/confirm`;
 	    }
 	});
 
@@ -182,13 +184,13 @@ export default function formActions() {
 	        	equalTo: 'メールは同一ではありません',
 	      	},
 	      	phone: '入力してください。',
-	      	category: '入力してください。'
+	      	category: '選択してください。'
 	    },
 	    errorPlacement: function(error, element) {
 		    error.insertAfter(element.closest('.contact-form__row--required'));
 		},
 	    submitHandler: function(form) {
-	     	window.location.href = `${window.location.origin}/vom-lp/contact-confirm`;
+	     	window.location.href = `${window.location.origin}/vom/contact-confirm`;
 	    }
 	});
 }

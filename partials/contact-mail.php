@@ -13,7 +13,7 @@
 	$content_admin ="下記の内容でVOMより問い合わせがありました。\n折り返しの対応をお願いいたします。\n\n-----\n会社名:\n $company \n\n担当名:\n $person \n\nメールアドレス:\n $email \n\n電話番号:\n$phone\n\nカテゴリ:\n $category\n\n備考:\n $message\n-----";
 
 	$subject_sender = "【VOM】お問い合わせありがとうございます。";
-	$content_sender ="$person 様\n\nVOMにお問い合わせいただきありがとうございます。\n下記の内容でお問い合わせをうけたまわりました。\n弊社で内容を確認の上、折り返しご連絡いたしますのでいましばらくお待ち下さい。\n\n-----\n会社名:\n $company \n\n担当名:\n $person \n\nメールアドレス:\n $email \n\n電話番号:\n$phone\n\nカテゴリ:\n $category\n\n備考:\n $message\n-----\n\nこちらのメールは VOM (https://vom.world) の無料相談フォームから送信されました。\nなお、こちらのメールは自動返信メールとなっております。";
+	$content_sender ="$person 様\n\nVOMにお問い合わせいただきありがとうございます。\n下記の内容でお問い合わせをうけたまわりました。\n弊社で内容を確認の上、折り返しご連絡いたしますのでいましばらくお待ち下さい。\n\n-----\n会社名:\n $company \n\n担当名:\n $person \n\nメールアドレス:\n $email \n\n電話番号:\n$phone\n\nカテゴリ:\n $category\n\n備考:\n $message\n-----\n\nこちらのメールは VOM (https://vom.world) のフォームから送信されました。\nなお、こちらのメールは自動返信メールとなっております。";
 
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\Exception;
