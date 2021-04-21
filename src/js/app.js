@@ -6,6 +6,7 @@ import scrollActivate from './modules/scroll-activate';
 import initParallax from './modules/init-parallax';
 import locker from './modules/locker';
 import formActions from './modules/form-actions';
+import formValidation from './modules/form-validation';
 import heroAnimation from './modules/hero-animation';
 import scrollToElement from './modules/scroll-to-element';
 import congratulations from './modules/congratulations';
@@ -16,6 +17,7 @@ scrollActivate();
 initParallax();
 locker();
 formActions();
+formValidation();
 scrollToElement();
 separateLetters();
 checkIfIOS();
@@ -28,6 +30,8 @@ if($('#js-register-complete-page').length > 0) {
 	congratulations();
 	localStorage.setItem('registerData', '');
 	localStorage.setItem('referral', '');
+
+	$('html').addClass('scroll-disabled-pc');
 }
 
 if($('#js-register-form').length > 0) {
@@ -40,6 +44,7 @@ if($('#js-register-form').length > 0) {
 		$('input[name="sns_instagram"]').val(retrievedObject.sns_instagram);
 		$('input[name="sns_youtube"]').val(retrievedObject.sns_youtube);
 		$('input[name="sns_other"]').val(retrievedObject.sns_other);
+		$('input[name="followers"]').val(retrievedObject.followers);
 		$('input[name="office"][value='+retrievedObject.office+']').attr('checked', 'checked');
 		$('textarea[name="message"]').text(retrievedObject.message);
 
@@ -52,6 +57,8 @@ if($('#js-register-form').length > 0) {
 if($('#js-contact-complete-page').length > 0) {
 	localStorage.setItem('contactData', '');
 	localStorage.setItem('referral', '');
+
+	$('html').addClass('scroll-disabled-pc');
 }
 
 if($('#js-contact-form').length > 0) {

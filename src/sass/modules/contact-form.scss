@@ -68,6 +68,7 @@
   }
   input {
     &[type='text'],
+    &[type='number'],
     &[type='email'] {
       width: 100%;
       padding: 22px 30px;
@@ -98,6 +99,22 @@
 
     &::placeholder {
       color: #404040;
+    }
+  }
+
+  .contact-form__sns {
+    label.error {
+      width: 100%;
+      margin-top: 0;
+      margin-left: 110px;
+
+      @include max-screen($breakpoint-mobile) {
+        margin-left: 28.5vw;
+      }
+
+      &:before {
+        display: none;
+      }
     }
   }
 }

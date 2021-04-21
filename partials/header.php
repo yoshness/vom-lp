@@ -6,12 +6,12 @@
 		<meta property="og:type" content="website" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 		<link rel="profile" href="https://gmpg.org/xfn/11">
-		<link rel="stylesheet" href="./public/style.css">
+		<link rel="stylesheet" href="https://vom.world/public/style.css">
 
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-		<link rel="shortcut icon" type="image/png" href="./public/images/favicon.png"/>
+		<link rel="shortcut icon" type="image/png" href="https://vom.world/public/images/favicon.png"/>
 
 		<?php
 			$request = $_SERVER['REQUEST_URI'];
@@ -56,6 +56,16 @@
 
 		<meta property="og:site_name" content="VOM" />
 		<meta property="og:image" content="https://dev.wunderbar.co.jp/vom/public/images/ogp.png">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-3VWFGWB5X9"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-3VWFGWB5X9');
+		</script>
 	</head>
 
 	<body>

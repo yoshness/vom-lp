@@ -5,12 +5,13 @@
     $email      = $_POST['email'] ?? '---';
     $category   = $_POST['category'] ?? '---';
     $sns        = $_POST['sns'] ?? '---';
+    $followers  = $_POST['followers'] ?? '---';
     $office     = $_POST['office'] ?? '---';
     $message    = $_POST['message'] ?? '---';
     $sender     = $_POST['email'] ?? '---';
     $referral   = $_POST['referral'] ?? '---';
 
-    $recipient  = "keito.nagao@wunderbar.co.jp";
+    $recipient  = "info@vom.world";
     $recipient2 = "itoshun14@gmail.com";
 
     $client = new Google\Client();
@@ -30,6 +31,7 @@
             $email,
             $category,
             $sns,
+            $followers,
             $office,
             $message,
             $sender,
@@ -45,10 +47,10 @@
     }
 
 	$subject_admin = "【VOM】事前登録がありました。";
-	$content_admin ="下記の内容で事前登録がありました。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n\nReferral: $referral \n-----";
+	$content_admin ="下記の内容で事前登録がありました。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\nフォロワー数:\n $followers\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n\nReferral: $referral \n-----";
 
 	$subject_sender = "【VOM】事前登録が完了しました！";
-	$content_sender ="$stage_name 様\n\nこの度は、「日本を元気にする」に共感いただきありがとうございます。\n事前登録を下記の内容でうけたまわりました。\n間も無くサービスリリースとなりますので、リリース間近となりましたら、改めてご登録いただいたアドレスへご連絡させていただきます。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n-----\n\nこちらのメールは VOM (https://vom.world) のフォームから送信されました。\nなお、こちらのメールは自動返信メールとなっております。";
+	$content_sender ="$stage_name 様\n\nこの度は、「日本を元気にする」に共感いただきありがとうございます。\n事前登録を下記の内容でうけたまわりました。\n間も無くサービスリリースとなりますので、リリース間近となりましたら、改めてご登録いただいたアドレスへご連絡させていただきます。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\nフォロワー数:\n $followers\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n-----\n\nこちらのメールは VOM (https://vom.world) のフォームから送信されました。\nなお、こちらのメールは自動返信メールとなっております。";
 
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\Exception;
@@ -83,10 +85,8 @@
 		{
 		    echo "Mailer Error: " . $mail->ErrorInfo;
 		} 
-		else 
-		{
-		    header("Location: ".$domainPath."thank-you", TRUE, 301);
-			exit();
-		}
+		else { ?>
+		    <script> location.replace("https://vom.world/thank-you");</script>
+		<?php }
 	}
 ?>

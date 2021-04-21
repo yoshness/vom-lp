@@ -5,7 +5,10 @@
     height: initial;
     margin-bottom: 0;
     padding: 0;
-    cursor: pointer;
+    
+    &[type='checkbox'] {
+      cursor: pointer;
+    }
   }
   label {
     position: relative;

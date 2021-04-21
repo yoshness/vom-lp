@@ -21,6 +21,10 @@
 				<input id="js-register-sns" name="sns" style="white-space: pre-line;">
 			</div>
 			<div class="l-confirm__row">
+				<label for="">登録時点のざっくりフォロワー数（数字のみで入力してください。複数SNS合計も可）</label>
+				<input id="js-register-followers" name="followers">
+			</div>
+			<div class="l-confirm__row">
 				<label for="">事務所所属有無</label>
 				<input id="js-register-office" name="office">
 			</div>

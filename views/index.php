@@ -89,7 +89,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="l-index__monetize">
+	<section class="l-index__monetize" style="display: none;">
 		<div class="l-container u-flex u-flex--center info-block info-block--reverse js-scroll-activate">
 			<div class="info-block__left js-scroll-activate-item">
 				<h2>可処分時間を収益化</h2>
@@ -108,7 +108,7 @@
 			</div>
 		</div>
 	</section> 
-	<section class="l-index__faq">
+	<section class="l-index__faq" style="margin-top: 70px;">
 		<div class="l-container js-scroll-activate">
 			<h2 class="section-title js-scroll-activate-item">よくある質問</h2>
 			<ul class="js-scroll-activate-item">
@@ -209,24 +209,25 @@
 						<input id="category_3" name="category" value="芸人" type="checkbox"><label for="category_3">芸人</label>
 						<input id="category_4" name="category" value="アーティスト" type="checkbox"><label for="category_4">アーティスト</label>
 						<input id="category_5" name="category" value="ユーチューバー" type="checkbox"><label for="category_5">ユーチューバー</label>
-						<input id="category_6" name="category" value="ライバー" type="checkbox"><label for="category_6">ライバー</label>
+						<input id="category_6" name="category" value="タレント" type="checkbox"><label for="category_6">タレント</label>
 						<input id="category_7" name="category" value="アスリート" type="checkbox"><label for="category_7">アスリート</label>
 						<input id="category_8" name="category" value="モデル" type="checkbox"><label for="category_8">モデル</label>
 						<input id="category_9" name="category" value="起業家" type="checkbox"><label for="category_9">起業家</label>
 						<input id="category_10" name="category" value="政治家" type="checkbox"><label for="category_10">政治家</label>
-						<input id="category_11" name="category" value="タレント" type="checkbox"><label for="category_11">タレント</label>
+						<input id="category_11" name="category" value="ライバー" type="checkbox"><label for="category_11">ライバー</label>
 						<input id="category_12" name="category" value="グラビアアイドル" type="checkbox"><label for="category_12">グラビアアイドル</label>
 						<input id="category_13" name="category" value="インフルエンサー" type="checkbox"><label for="category_13">インフルエンサー</label>
 						<input id="category_14" name="category" value="DJ" type="checkbox"><label for="category_14">DJ</label>
 						<input id="category_15" name="category" value="格闘家" type="checkbox"><label for="category_15">格闘家</label>
 						<input id="category_16" name="category" value="美容家" type="checkbox"><label for="category_16">美容家</label>
 						<input id="category_17" name="category" value="アナウンサー" type="checkbox"><label for="category_17">アナウンサー</label>
-						<input id="category_18" name="category" value="プロデューサー" type="checkbox"><label for="category_18">プロデューサー</label>
+						<input id="category_18" name="category" value="声優" type="checkbox"><label for="category_18">声優</label>
+						<input id="category_18" name="category" value="動物" type="checkbox"><label for="category_18">動物</label>
 						<input id="category_other" name="category" value="その他" type="checkbox"><label for="category_other">その他</label>
 					</div>
 					<input type="text" name="category_other" placeholder="例）その他の場合は、ご記入ください。" id="js-category-input">
 				</div>
-				<div class="contact-form__row">
+				<div class="contact-form__row contact-form__row--required">
 					<label for="">SNS情報（最低1つご記入ください）</label>
 					<div class="contact-form__sns custom-checkboxes u-flex u-flex--center">
 						<input id="sns_1" name="sns_1" value="Twitter" type="checkbox"><label for="sns_1">Twitter</label>
@@ -238,6 +239,10 @@
 						<input id="sns_4" name="sns_4" value="その他" type="checkbox"><label for="sns_4">その他</label>
 						<input type="text" placeholder="例）SNS名＋ユーザー名・ID" name="sns_other">
 					</div>
+				</div>
+				<div class="contact-form__row contact-form__row--required">
+					<label for="">登録時点のざっくりフォロワー数（数字のみで入力してください。複数SNS合計も可）</label>
+					<input type="number" placeholder="例）20万の場合は「20」、100万の場合は「100」など" name="followers">
 				</div>
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">事務所所属有無</label>

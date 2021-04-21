@@ -5,7 +5,7 @@
 	$phone = $_POST['phone'];
 	$category = $_POST['category'];
 	$message = $_POST['message'];
-	$recipient = "keito.nagao@wunderbar.co.jp";
+	$recipient  = "info@vom.world";
 	$recipient2 = "itoshun14@gmail.com";
 	$sender = $_POST['email'];
 
@@ -48,10 +48,8 @@
 		{
 		    echo "Mailer Error: " . $mail->ErrorInfo;
 		} 
-		else 
-		{
-		    header("Location: ".$domainPath."contact-complete", TRUE, 301);
-			exit();
-		}
+		else { ?>
+			<script> location.replace("https://vom.world/contact-complete");</script>
+		<?php }
 	}
 ?>
