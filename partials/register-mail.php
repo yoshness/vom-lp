@@ -23,7 +23,7 @@
 
     $spreadsheetId = "1J1RKbwQb-Di63R3hWn6A_ziftxCtciAIIiJeLk7himA";
 
-    $range = "シート1!B:J";
+    $range = "シート1!B:I";
     $valueRange= new Google_Service_Sheets_ValueRange();
     $valueRange->setValues([
         "values" => [
