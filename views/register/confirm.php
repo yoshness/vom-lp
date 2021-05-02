@@ -35,7 +35,7 @@
 			<input type="hidden" name="referral" id="js-register-referral">
 			<input type="submit" name="submit" value="事前登録する" class="link-button">
 		</form>
-		<a href="<?php echo $domainPath; ?>" class="l-confirm__back">←入力画面に戻る</a>
+		<a href="<?php echo $domainPath; ?>#js-register-wrapper" class="l-confirm__back">←入力画面に戻る</a>
 		<p class="l-confirm__notice">
 			メディア、取材、事務所関係の業務提携等に関する<br>お問い合わせは<a href="<?php echo $domainPath; ?>contact">こちら</a>をご利用くださいませ。
 		</p>

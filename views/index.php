@@ -242,7 +242,7 @@
 				</div>
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">登録時点のざっくりフォロワー数（数字のみで入力してください。複数SNS合計も可）</label>
-					<input type="number" placeholder="例）20万の場合は「20」、100万の場合は「100」など" name="followers">
+					<input type="number" placeholder="例）20万は「20」、8千は「0.8」" name="followers">
 				</div>
 				<div class="contact-form__row contact-form__row--required">
 					<label for="">事務所所属有無</label>

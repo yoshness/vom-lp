@@ -49,7 +49,7 @@
 	$content_admin ="下記の内容で事前登録がありました。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\nフォロワー数:\n $followers\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n\nReferral: $referral \n-----";
 
 	$subject_sender = "【VOM】事前登録が完了しました！";
-	$content_sender ="$stage_name 様\n\nこの度は、「日本を元気にする」に共感いただきありがとうございます。\n事前登録を下記の内容でうけたまわりました。\n間も無くサービスリリースとなりますので、リリース間近となりましたら、改めてご登録いただいたアドレスへご連絡させていただきます。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\nフォロワー数:\n $followers\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n-----\n\nこちらのメールは VOM (https://vom.world) のフォームから送信されました。\nなお、こちらのメールは自動返信メールとなっております。";
+    $content_sender ="$stage_name 様\n\nこの度は、著名人から動画メッセージをもらえるサービス「VOM」の\nタレント事前登録をいただき、誠にありがとうございます。\nご入力いただいた以下情報にて事前審査・登録手続きを行わせていただきます。\n※本文下部に今後の流れを記載。\n\n-----\n活動名、芸名:\n $stage_name \n\nメールアドレス:\n $email \n\nカテゴリ（複数選択可）:\n $category \n\nSNS情報（最低1つご記入ください）:\n$sns\n\nフォロワー数:\n $followers\n\n事務所所属有無:\n $office\n\nご質問、ご要望等:\n $message\n-----\n\n【今後の流れ】\nリリース直前になりましたら、VOM審査を通過された方へVOMタレントログイン情報をお送りいたします。\n初回登録時には各タレント様ご自身にて【10-15秒程度のご挨拶セルフィー動画】の\n撮影協力をいただいております。\n実際の撮影イメージについては後日メールにてお送りさせていただきます。\nVOMは、皆様の動画をファンへ届け、コロナ禍にある日本を元気にすると確信しています。\nリリースまで今しばらくお待ちくださいませ。\n\nこちらのメールは VOM (https://vom.world) のフォームから送信されました。\nなお、こちらのメールは自動返信メールとなっております。\nご質問、ご不明点等は info@vom.world までご連絡をお願いいたします。";
 
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\Exception;
