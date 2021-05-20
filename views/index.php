@@ -14,8 +14,7 @@
 			<div class="info-block__left js-scroll-activate-item">
 				<h2>VOMって<br>どんなサービス？</h2>
 				<p>
-					VOMは、<em>ファンと著名人による日本最大級の動画メッセージプラットフォーム</em>です。
-					ユーザーは目的に応じて好きな著名人に動画メッセージリクエストの送信が可能、
+					VOMは、<em>著名人から動画メッセージをもらえる日本最大級の動画メッセージプラットフォーム</em>です。ユーザーは目的に応じて好きな著名人に動画メッセージリクエストの送信が可能、
 					著名人は複数のリクエストからプレゼントしたいテーマを自ら選定し、自撮り動画を作成。
 					作成された世界にひとつだけの動画はユーザーに送られ、感動体験と勇気を与えます。
 				VOMは、エンタメパワーを最大化し、日本を元気にすると確信しています。
@@ -67,7 +66,7 @@
 	<section class="l-index__notice u-bg-fill" style="background-image: url(<?php echo $domainPath; ?>public/images/index/notice-1.jpg);">
 		<div class="u-flex u-flex--center js-scroll-activate">
 			<h2 class=" js-scroll-activate-item">超有名タレント、<br class="u-show-sp">著名人続々登録！</h2>
-			<p class=" js-scroll-activate-item">事前登録1,000人突破</p>
+			<p class=" js-scroll-activate-item">いますぐ簡単30秒登録</p>
 			<a href="#js-register-wrapper" class="u-flex u-flex--center js-scroll js-scroll-activate-item">事前登録する</a>
 		</div>
 	</section>
@@ -153,7 +152,7 @@
 	<section class="l-index__notice u-bg-fill" style="background-image: url(<?php echo $domainPath; ?>public/images/index/notice-2.png);">
 		<div class="u-flex u-flex--center js-scroll-activate">
 			<h2 class="js-scroll-activate-item">超有名タレント、<br class="u-show-sp">著名人続々登録！</h2>
-			<p class="js-scroll-activate-item">事前登録1,000人突破</p>
+			<p class="js-scroll-activate-item">いますぐ簡単30秒登録</p>
 			<a href="#js-register-wrapper" class="u-flex u-flex--center js-scroll js-scroll-activate-item">事前登録する</a>
 		</div>
 	</section>

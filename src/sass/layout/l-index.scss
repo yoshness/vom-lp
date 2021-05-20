@@ -214,6 +214,10 @@
     &:before {
       left: 38%;
 
+      @media screen and (max-width: 1400px) {
+        left: 35%
+      }
+
       @include max-screen($breakpoint-mobile) {
         left: 5%;
       }
@@ -222,6 +226,9 @@
       left: 59%;
       transform: scaleX(-1);
 
+      @media screen and (max-width: 1400px) {
+        left: 61%
+      }
       @include max-screen($breakpoint-mobile) {
         left: 84.5%;
       }
